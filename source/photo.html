@@ -3,6 +3,9 @@
   <head>
     <meta charset="UTF-8">
     <title>Sedona photo</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
 
@@ -15,17 +18,17 @@
         <button class="main-nav__close" type="button">Закрыть меню</button>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
+            <li class="site-list__item">
+              <a class="site-list__link" href="index.html">Главная</a>
+            </li>
             <li class="site-list__item site-list__item--active">
-              <a href="index.html">Главная</a>
+              <a class="site-list__link site-list__link--active">Фото и видео</a>
             </li>
             <li class="site-list__item">
-              <a>Фото и видео</a>
+              <a class="site-list__link" href="form.html">Форма отзыва</a>
             </li>
             <li class="site-list__item">
-              <a href="form.html">Форма отзыва</a>
-            </li>
-            <li class="site-list__item">
-              <a href="#">HTML Academy</a>
+              <a class="site-list__link" href="#">HTML Academy</a>
             </li>
           </ul>
         </div>
@@ -41,35 +44,35 @@
       <section class="gallery">
 
         <header class="gallery__header">
-          <h2 class="gallery__title">Фото и видео</h2>
+          <h1 class="title">Фото и видео</h1>
           <p class="gallery__description">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
         </header>
 
         <div class="photo">
           <ul class="photo__list">
             <li class="photo__item">
-              <h3>Народные просторы</h3>
+              <h3 class="photo__title">Народные просторы</h3>
               <img class="photo__image" src="http://placehold.it/280x280" width="280" height="280" alt="Народные просторы">
               <p class="photo__author">Автор фото: Борис</p>
               <button class="btn btn__like">Постаить лайк</button>
               <p class="photo__likes">1350</p>
             </li>
             <li class="photo__item">
-              <h3>Местная растительность</h3>
+              <h3 class="photo__title">Местная растительность</h3>
               <img class="photo__image" src="http://placehold.it/280x280" width="280" height="280" alt="Местная растительность">
               <p class="photo__author">Автор фото: Сергей</p>
               <button class="btn btn__like">Постаить лайк</button>
               <p class="photo__likes">143</p>
             </li>
             <li class="photo__item">
-              <h3>Дорога на север</h3>
+              <h3 class="photo__title">Дорога на север</h3>
               <img class="photo__image" src="http://placehold.it/280x280" width="280" height="280" alt="Дорога на север">
               <p class="photo__author">Автор фото: Петр</p>
               <button class="btn btn__like">Постаить лайк</button>
               <p class="photo__likes">96</p>
             </li>
             <li class="photo__item">
-              <h3>Мост дьявола</h3>
+              <h3 class="photo__title">Мост дьявола</h3>
               <img class="photo__image" src="http://placehold.it/280x280" width="280" height="280" alt="Мост дьявола">
               <p class="photo__author">Автор фото: Антон</p>
               <button class="btn btn__like">Постаить лайк</button>
