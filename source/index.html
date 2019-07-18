@@ -11,9 +11,9 @@
 
     <header class="page-header">
       <nav class="main-nav">
-          <a class="page-header__logo">
-              <img class="page-header__logo-image" src="img/logo-sedona-mobile.svg" width="102" height="83" alt="Седона логотип">
-          </a>
+        <a class="page-header__logo">
+          <img class="page-header__logo-image" src="img/logo-sedona-mobile.svg" width="102" height="83" alt="Седона логотип">
+        </a>
         <button class="btn main-nav__open" type="button">Открыть меню</button>
         <button class="btn main-nav__close" type="button">Закрыть меню</button>
         <div class="main-nav__wrapper">
@@ -37,9 +37,9 @@
 
     <main>
 
-      <div class="promo">
-        <img src="img/text-sedona-index.svg" width="320" height="213" alt="Седона промо">
-        <img src="img/bg-intro-triangle-mobile.svg" width="302" height="27" alt="Седона промо">
+      <div class="promo promo--index">
+        <img class="promo__image" src="img/text-sedona-index.svg" width="320" height="213" alt="Седона промо">
+        <img class="promo__mask" src="img/bg-intro-triangle-mobile.svg" width="302" height="27" alt="Седона промо">
       </div>
 
       <section class="advantages">
@@ -50,7 +50,7 @@
         </header>
 
         <!--Первое преимущество и картинка -->
-        <div class="advantages__strip advantages__strip--straight">
+        <div class="advantages__strip">
           <div class="advantage advantage--blue">
             <h2 class="title">Настоящий городок</h2>
             <p class="advantage__number">№1</p>
@@ -63,17 +63,17 @@
         </div>
 
         <!--Блок с иконками -->
-        <div class="advantages-strip">
-          <ul class="advantages__features">
-            <li class="features__item">
+        <div class="advantages__strip">
+          <ul class="features">
+            <li class="features__item features__item--housing">
               <h2 class="title title--left">Жилье</h2>
               <p class="desc desc--features">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
             </li>
-            <li class="features__item">
+            <li class="features__item features__item--souvenir">
               <h2 class="title title--left">Сувениры</h2>
               <p class="desc desc--features">Не только китайского, но и местного производства!</p>
             </li>
-            <li class="features__item">
+            <li class="features__item features__item--food">
               <h2 class="title title--left">Еда</h2>
               <p class="desc desc--features">Всегда заказывайте фирменный бургер, Вы не разочаруетесь!</p>
             </li>
