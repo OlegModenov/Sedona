@@ -1,5 +1,23 @@
 .social__list {
-  margin: 0;
+  display: flex; /*чтобы иконки-ссылки встали в ряд*/
+  flex-wrap: wrap; /*если появятся дополнительные иконки*/
+  justify-content: space-between;
+  margin: 0 auto;
+  margin-bottom: 45px;
   padding: 0;
+  width: 150px;
+
   list-style: none;
+}
+
+.social__link {
+  display: flex; /*чтобы задать размеры, сделать фон для соц. ссылок и зацентровать их*/
+  width: 48px;
+  height: 48px;
+  justify-content: center;
+  align-items: center;
+
+  background-color: #81b3d2;
+
+  fill: #ffffff;
 }

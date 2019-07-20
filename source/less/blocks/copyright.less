@@ -1,4 +1,32 @@
+.copyright {
+  position: relative;
+}
+
 .copyright__text {
+  display: block;
+  margin-right: 40px;
+
   font-size: 14px;
   line-height: 26px;
 }
+
+.copyright__icon {
+
+  position: absolute;
+  bottom: -5px;
+
+  width: 30px;
+  height: 35px;
+  margin-left: 25px;
+}
+
+.copyright__icon:hover,
+.copyright__icon:focus {
+  fill: #81b3d2;
+}
+
+.copyright__link.disabled .copyright__icon {
+  fill: #b2b2b2;
+  pointer-events: none;
+}
+
