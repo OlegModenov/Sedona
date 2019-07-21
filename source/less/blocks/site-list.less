@@ -5,9 +5,38 @@
 
 .site-list__item:active {
   background-color: #5496bd;
-  opacity: 0.3;
+}
+
+.site-list__item:active .site-list__link {
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .site-list__link {
   color: #ffffff;
+}
+
+@media (min-width: 768px) {
+  .site-list__link {
+    color: #000000;
+  }
+
+  .site-list__item:hover,
+  .site-list__item:focus,
+  .site-list__item:active {
+    background-color: #ffffff;
+  }
+
+  .site-list__item:hover .site-list__link {
+    color: #81b3d2;
+  }
+
+  .site-list__item:active .site-list__link {
+    // color: rgba(255, 255, 255, 0.3); отображается белым
+    color: red;
+  }
+
+  .site-list__item:focus .site-list__link {
+    //color: #766357;
+    color: blue;
+  }
 }
