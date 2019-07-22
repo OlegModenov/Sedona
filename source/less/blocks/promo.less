@@ -6,7 +6,7 @@
   height: 390px;
 
   background-color: #d9eaf2;
-  background-image: url("../img/bg-back-mobile@1x.jpg");
+  background-image: url("../../img/bg-back-mobile@1x.jpg");
   background-position: center;
   background-repeat: no-repeat;
 }
@@ -15,18 +15,24 @@
   margin-top: 90px;
 }
 
-.promo__mask {
+// подрезающая маска
+.promo::after {
+  content: "";
   position: absolute;
   left: 0;
   bottom: 0;
 
   width: 320px;
   height: 27px;
+
+  background-image: url("../../img/bg-intro-triangle-mobile.svg");
+  background-position: 0 0;
+  background-repeat: no-repeat;
 }
 
 @media (min-width: 768px) {
   .promo {
-    background-image: url("../img/bg-back-tablet@1x.jpg");
+    background-image: url("../../img/bg-back-tablet@1x.jpg");
     min-height: 520px;
   }
 
@@ -35,11 +41,50 @@
     height: 350px;
     margin-top: 80px;
   }
+
+  // подрезающая маска (правая часть)
+  .promo::before {
+    content: "";
+
+    position: absolute;
+    left: 385px;
+    bottom: -3px;
+
+    width: 385px;
+    height: 60px;
+
+    background-image: url("../../img/bg-intro-triangle-tablet.svg");
+
+    transform: scale(-1, 1);
+  }
+
+  // подрезающая маска (левая часть)
+  .promo::after {
+    bottom: -3px;
+
+    width: 385px;
+    height: 60px;
+
+    background-image: url("../../img/bg-intro-triangle-tablet.svg");
+  }
 }
 
 @media (min-width: 1280px) {
   .promo {
-    background-image: url("../img/bg-back-desktop@1x.jpg");
+    background-image: url("../../img/bg-back-desktop@1x.jpg");
     min-height: 520px;
+  }
+
+  // подрезающая маска (правая часть)
+  .promo::before {
+    left: 600px;
+    width: 600px;
+    background-image: url("../../img/bg-intro-triangle-desktop.svg");
+  }
+
+  // подрезающая маска (левая часть)
+  .promo::after {
+    width: 600px;
+    background-image: url("../../img/bg-intro-triangle-desktop.svg");
   }
 }
