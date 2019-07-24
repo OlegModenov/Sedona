@@ -58,26 +58,26 @@
       <section class="review">
 
         <header class="review__header">
-          <h1 class="title">Оставьте свой отзыв</h1>
-          <p class="desc">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+          <h1 class="title review__title">Оставьте свой отзыв</h1>
+          <p class="desc review__desc">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
         </header>
 
         <form class="form" action="https://echo.htmlacademy.ru" method="post">
 
-          <fieldset class="field form__name">
+          <fieldset class="field form__person">
             <legend class="field__legend">Представьтесь:</legend>
-            <ul class="field__list">
-              <li class="field__item">
+            <ul class="field__list person">
+              <li>
                 <label class="field__label field__label--regular" for="name">Имя<sup>*</sup>:</label>
-                <input class="field__element" type="text" id="name" name="name" placeholder="Петр" required>
+                <input class="field__text person__name" type="text" id="name" name="name" placeholder="Петр" required>
               </li>
-              <li class="field__item">
+              <li>
                 <label class="field__label field__label--regular" for="surname">Фамилия<sup>*</sup>:</label>
-                <input class="field__element" type="text" id="surname" name="surname" placeholder="Иванов" required>
+                <input class="field__text person__surname" type="text" id="surname" name="surname" placeholder="Иванов" required>
               </li>
-              <li class="field__item">
+              <li>
                 <label class="field__label field__label--regular" for="father-name">Отчество:</label>
-                <input class="field__element" type="text" id="father-name" name="father-name" placeholder="Александрович">
+                <input class="field__text person__father-name" type="text" id="father-name" name="father-name" placeholder="Александрович">
               </li>
             </ul>
           </fieldset>
@@ -85,13 +85,13 @@
           <fieldset class="field form__contacts">
             <legend class="field__legend">Контактная информация:</legend>
             <ul class="field__list">
-              <li class="field__item">
+              <li class="contacts">
                 <label class="field__label field__label--regular" for="phone">Контактный телефон<sup>*</sup>:</label>
-                <input class="field__element" type="tel" id="phone" name="phone" placeholder="Введите телефон" required>
+                <input class="field__text" type="tel" id="phone" name="phone" placeholder="Введите телефон" required>
               </li>
-              <li class="field__item">
+              <li class="contacts">
                 <label class="field__label field__label--regular" for="mail">Электронная почта<sup>*</sup>:</label>
-                <input class="field__element" type="tel" id="mail" name="mail" placeholder="Введите e-mail" required>
+                <input class="field__text" type="email" id="mail" name="mail" placeholder="Введите e-mail" required>
               </li>
             </ul>
           </fieldset>
@@ -100,16 +100,22 @@
             <legend class="field__legend">Ваше общее впечатление:</legend>
             <ul class="field__list">
               <li class="field__item">
-                <input class="field__element" type="radio" id="positive" name="impressions" value="positive" checked>
-                <label class="field__label" for="positive">Скорее положительное</label>
+                <label class="field__label" for="positive">
+                  <input class="field__radio visually-hidden" type="radio" id="positive" name="impressions" value="positive" checked>
+                  <span class="indicator radio-indicator"></span>
+                  Скорее положительное</label>
               </li>
               <li class="field__item">
-                <input class="field__element" type="radio" id="negative" name="impressions" value="negative">
-                <label class="field__label" for="negative">Скорее отрицательное</label>
+                <label class="field__label" for="negative">
+                  <input class="field__radio visually-hidden" type="radio" id="negative" name="impressions" value="negative">
+                  <span class="indicator radio-indicator"></span>
+                  Скорее отрицательное</label>
               </li>
               <li class="field__item">
-                <input class="field__element" type="radio" id="dont-know" name="impressions" value="dont-know">
-                <label class="field__label" for="dont-know">Затрудняюсь ответить</label>
+                <label class="field__label" for="dont-know">
+                  <input class="field__radio visually-hidden" type="radio" id="dont-know" name="impressions" value="dont-know">
+                  <span class="indicator radio-indicator"></span>
+                  Затрудняюсь ответить</label>
               </li>
             </ul>
           </fieldset>
@@ -118,27 +124,35 @@
             <legend class="field__legend">Посещенные достопримечательности:</legend>
             <ul class="field__list">
               <li class="field__item">
-                <input class="field__element" type="checkbox" id="bridge" name="bridge" checked>
-                <label class="field__label" for="bridge">Мост дьявола</label>
+                <label class="field__label" for="bridge">
+                  <input class="field__checkbox visually-hidden" type="checkbox" id="bridge" name="bridge" checked>
+                  <span class="indicator checkbox-indicator"></span>
+                  Мост дьявола</label>
               </li>
               <li class="field__item">
-                <input class="field__element" type="checkbox" id="mountain" name="mountain " checked>
-                <label class="field__label" for="mountain">Гора-Колокол</label>
+                <label class="field__label" for="mountain">
+                  <input class="field__checkbox visually-hidden" type="checkbox" id="mountain" name="mountain " checked>
+                  <span class="indicator checkbox-indicator"></span>
+                  Гора-Колокол</label>
               </li>
               <li class="field__item">
-                <input class="field__element" type="checkbox" id="park" name="park" checked>
-                <label class="field__label" for="park">Слайд-парк</label>
+                <label class="field__label" for="park">
+                  <input class="field__checkbox visually-hidden" type="checkbox" id="park" name="park" checked>
+                  <span class="indicator checkbox-indicator"></span>
+                  Слайд-парк</label>
               </li>
               <li class="field__item">
-                <input class="field__element" type="checkbox" id="rocks" name="rocks">
-                <label class="field__label" for="rocks">Красные скалы</label>
+                <label class="field__label" for="rocks">
+                  <input class="field__checkbox visually-hidden" type="checkbox" id="rocks" name="rocks">
+                  <span class="indicator checkbox-indicator"></span>
+                  Красные скалы</label>
               </li>
             </ul>
           </fieldset>
 
           <fieldset class="field form__emotions">
             <legend class="field__legend">Опишите свои эмоции:</legend>
-            <textarea class="field__element" rows="6" cols="28" name="emotions__description" id="emotions__description" placeholder="Опишите подробно все свои восторги"></textarea>
+            <textarea class="field__area" rows="6" cols="28" name="emotions__description" id="emotions__description" placeholder="Опишите подробно все свои восторги"></textarea>
           </fieldset>
 
           <button class="btn form__btn" type="submit">Отправить отзыв</button>
