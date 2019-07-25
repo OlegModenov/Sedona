@@ -33,24 +33,17 @@
   background-repeat: no-repeat;
 }
 
-.advantages__mask {
-  position: absolute;
-  left: 0;
-  bottom: -40px;
-  z-index: 1;
-}
-
 .advantages__container {
   padding-left: 40px;
   padding-right: 40px;
 }
 
-.advantages__strip--grey {
+.advantages__row--grey {
   background-color: #eeeeee;
 }
 
 @media (min-width: 768px) {
-  .advantages__strip {
+  .advantages__row {
     display: flex;
   }
 
@@ -64,7 +57,7 @@
     display: none;
   }
 
-  .advantages__strip--reverse .advantage {
+  .advantages__row--reverse .advantage {
     order: 2;
   }
 }
