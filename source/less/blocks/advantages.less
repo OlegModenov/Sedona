@@ -3,7 +3,7 @@
   margin-bottom: 42px;
 }
 
-/*Синий фон*/
+/*Синий фон для подрезающей маски*/
 .advantages__header::after {
   content: "";
 
@@ -15,6 +15,22 @@
   height: 20px;
 
   background-color: #81b3d2;
+}
+
+// подрезающая маска
+.header::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -40px;
+  z-index: 1;
+
+  width: 320px;
+  height: 37px;
+
+  background-image: url("../../img/bg-triangle.svg");
+  background-position: 0 0;
+  background-repeat: no-repeat;
 }
 
 .advantages__mask {
