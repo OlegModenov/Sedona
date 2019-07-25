@@ -1,7 +1,7 @@
 .site-list {
   font-size: 18px;
   line-height: 40px;
-  color: #ffffff;
+  color: @white;
 }
 
 .site-list__item {
@@ -17,11 +17,11 @@
 
 .site-list__item:hover,
 .site-list__item:focus {
-  background-color: #669ec0;
+  background-color: @blue-hover;
 }
 
 .site-list__item:active {
-  background-color: #5496bd;
+  background-color: @blue-active;
 }
 
 .site-list__item:active .site-list__link {
@@ -29,7 +29,7 @@
 }
 
 .site-list__link {
-  color: #ffffff;
+  color: @white;
 }
 
 @media (min-width: 768px) {
@@ -42,7 +42,7 @@
   }
 
   .site-list__link {
-    color: #000000;
+    color: @black;
   }
 
   .site-list__item {
@@ -52,19 +52,19 @@
   .site-list__item:hover,
   .site-list__item:focus,
   .site-list__item:active {
-    background-color: #ffffff;
+    background-color: @white;
   }
 
   .site-list__item:hover .site-list__link {
-    color: #81b3d2;
+    color: @blue;
   }
 
   .site-list__item:active .site-list__link {
-    color: rgba(255, 255, 255, 0.3);
+    color: rgba(0, 0, 0, 0.3);
   }
 
+  // не работает, надо доделать
   .site-list__item:focus .site-list__link {
-    //color: #766357;
-    color: blue;
+    color: #766357;
   }
 }
