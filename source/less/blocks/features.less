@@ -23,7 +23,7 @@
   text-align: left;
 }
 
-.features__item::before { /*бургер по умолчанию*/
+.features__item::before {
   content: "";
 
   position: absolute;
@@ -32,10 +32,6 @@
 
   width: 40px;
   height: 40px;
-
-  background-image: url("../img/icon-burger.svg");
-  background-position: 0 0;
-  background-repeat: no-repeat;
 }
 
 .features__item--housing::before {
@@ -46,6 +42,12 @@
 
 .features__item--souvenir::before {
   background-image: url("../img/icon-gift.svg");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+}
+
+.features__item--food::before {
+  background-image: url("../img/icon-burger.svg");
   background-position: 0 0;
   background-repeat: no-repeat;
 }
