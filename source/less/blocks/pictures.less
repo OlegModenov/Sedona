@@ -3,3 +3,28 @@
   padding: 0;
   margin: 0;
 }
+
+@media (min-width: 768px) {
+  .pictures__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .pictures__item {
+    width: 50%;
+  }
+
+  .pictures__item--big {
+    width: 100%;
+  }
+}
+
+@media (min-width: 1280px) {
+  .pictures__item {
+    width: 33.33%;
+  }
+
+  .pictures__item--big {
+    width: 100%;
+  }
+}
