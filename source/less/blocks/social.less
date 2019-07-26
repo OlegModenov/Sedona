@@ -1,6 +1,6 @@
 .social__list {
-  display: flex; /*чтобы иконки-ссылки встали в ряд*/
-  flex-wrap: wrap; /*если появятся дополнительные иконки*/
+  display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   margin: 0 auto;
   margin-bottom: 45px;
@@ -20,14 +20,14 @@
   background-color: @blue;
 
   fill: @white;
-}
 
-.social__link:hover,
-.social__link:focus {
-  background-color: @blue-hover;
-}
+  &:hover,
+  &:focus {
+    background-color: @blue-hover;
+  }
 
-.social__link:active {
-  background-color: @blue-active;
-  fill: rgba(255, 255, 255, 0.3);
+  &:active {
+    background-color: @blue-active;
+    fill: rgba(255, 255, 255, 0.3);
+  }
 }

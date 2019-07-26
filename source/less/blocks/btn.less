@@ -9,20 +9,20 @@
 
   border: none;
   background-color: @blue;
-}
 
-.btn:hover,
-.btn:focus {
-  background-color: @blue-hover;
-}
+  &:hover,
+  &:focus {
+    background-color: @blue-hover;
+  }
 
-.btn:active {
-  background-color: @blue-active;
-  color: rgba(255, 255, 255, 0.3);
-}
+  &:active {
+    background-color: @blue-active;
+    color: rgba(255, 255, 255, 0.3);
+  }
 
-.btn.disabled,
-.btn:disabled {
-  background-color: #e5e5e5;
-  pointer-events: none;
+  &:disabled,
+  &.disabled {
+    background-color: #e5e5e5;
+    pointer-events: none;
+  }
 }

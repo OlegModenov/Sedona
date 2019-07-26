@@ -1,36 +1,36 @@
 .advantages__header {
   position: relative;
   margin-bottom: 42px;
-}
 
-/*Синий фон для подрезающей маски*/
-.advantages__header::after {
-  content: "";
+  // подрезающая маска
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -40px;
+    z-index: 1;
 
-  position: absolute;
-  bottom: -42px;
-  left: 0;
+    width: 320px;
+    height: 37px;
 
-  width: 320px;
-  height: 20px;
+    background-image: url("../img/bg-triangle.svg");
+    background-position: 0 0;
+    background-repeat: no-repeat;
+  }
 
-  background-color: @blue;
-}
+  /*Синий фон для подрезающей маски*/
+  &::after {
+    content: "";
 
-// подрезающая маска
-.header::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: -40px;
-  z-index: 1;
+    position: absolute;
+    bottom: -42px;
+    left: 0;
 
-  width: 320px;
-  height: 37px;
+    width: 320px;
+    height: 20px;
 
-  background-image: url("../img/bg-triangle.svg");
-  background-position: 0 0;
-  background-repeat: no-repeat;
+    background-color: @blue;
+  }
 }
 
 .advantages__row--grey {
@@ -45,11 +45,11 @@
   .advantages__header {
     width: 500px;
     margin: 0 auto;
-  }
 
-  .advantages__header::after,
-  .advantages__header::before {
-    display: none;
+    &::after,
+    &::before {
+      display: none;
+    }
   }
 
   .advantages__row--reverse .advantage {

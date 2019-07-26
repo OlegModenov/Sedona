@@ -13,15 +13,15 @@
   box-shadow:
     0 -1px rgba(255, 255, 255, 0.2),
     0 1px 2px rgba(0, 0, 0, 0.2);
-}
 
-.site-list__item:hover,
-.site-list__item:focus {
-  background-color: @blue-hover;
-}
+  &:hover,
+  &:focus {
+    background-color: @blue-hover;
+  }
 
-.site-list__item:active {
-  background-color: @blue-active;
+  &:active {
+    background-color: @blue-active;
+  }
 }
 
 .site-list__item:active .site-list__link {
@@ -47,12 +47,12 @@
 
   .site-list__item {
     box-shadow: none;
-  }
 
-  .site-list__item:hover,
-  .site-list__item:focus,
-  .site-list__item:active {
-    background-color: @white;
+    &:hover,
+    &:focus,
+    &:active {
+      background-color: @white;
+    }
   }
 
   .site-list__item:hover .site-list__link {

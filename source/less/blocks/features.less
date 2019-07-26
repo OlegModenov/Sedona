@@ -7,10 +7,6 @@
   margin-bottom: 5px;
 }
 
-.features__item {
-  position: relative;
-}
-
 .features__title {
   padding-bottom: 12px;
 
@@ -23,18 +19,22 @@
   text-align: left;
 }
 
-.features__item::before {
-  content: "";
+.features__item {
+  position: relative;
 
-  position: absolute;
-  top: -8px;
-  left: -50px;
+  &::before {
+    content: "";
 
-  width: 40px;
-  height: 40px;
+    position: absolute;
+    top: -8px;
+    left: -50px;
 
-  background-position: 0 0;
-  background-repeat: no-repeat;
+    width: 40px;
+    height: 40px;
+
+    background-position: 0 0;
+    background-repeat: no-repeat;
+  }
 }
 
 .features__item--housing::before {
