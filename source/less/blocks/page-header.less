@@ -22,8 +22,6 @@
   width: 25px;
   height: 25px;
 
-  font-size: 0;
-
   &:hover,
   &:focus {
     background-color: transparent;
@@ -72,7 +70,13 @@
 
 @media (min-width: 768px) {
   .page-header__wrapper {
-    display: none;
+    position: static;
+    min-height: 0;
+    overflow: hidden;
+  }
+
+  .page-header__logo {
+    top: 0;
   }
 
   .page-header__toggle {

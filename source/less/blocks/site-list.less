@@ -34,24 +34,24 @@
 
 @media (min-width: 768px) {
   .site-list {
-    justify-content: space-between;
-    padding: 0 50px;
-
+    display: flex;
+    flex-wrap: wrap;
     font-size: 14px;
     line-height: 26px;
   }
 
-  .site-list__link {
-    color: @black;
-  }
-
   .site-list__item {
+    width: 20%;
     box-shadow: none;
 
     &:hover,
     &:focus,
     &:active {
       background-color: @white;
+    }
+
+    &:nth-child(4n+2) {
+      margin-right: 20%;
     }
   }
 
@@ -66,5 +66,9 @@
   // не работает, надо доделать
   .site-list__item:focus .site-list__link {
     color: #766357;
+  }
+
+  .site-list__link {
+    color: @black;
   }
 }
