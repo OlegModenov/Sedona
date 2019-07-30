@@ -1,11 +1,28 @@
+.sights {
+  display: flex;
+}
+
 @media (min-width: 768px) {
   .sights {
     flex-direction: row;
     flex-wrap: wrap;
-    padding: 0 50px;
+    width: 500px;
+
+    margin: 0 auto;
   }
 
-  .sights .field-item {
-    width: 30%;
+  .sights__item {
+    width: 50%;
+  }
+}
+
+@media (min-width: 1280px) {
+  .sights {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .sights__item {
+    width: 25%;
   }
 }
