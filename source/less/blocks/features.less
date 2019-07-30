@@ -33,7 +33,7 @@
     width: 40px;
     height: 40px;
 
-    background-position: 0 0;
+    background-position: center bottom;
     background-repeat: no-repeat;
   }
 }
@@ -54,14 +54,30 @@
   .features {
     display: flex;
     justify-content: space-between;
-    padding: 0;
+    padding: 160px 0 60px 0;
+    margin-bottom: 0;
   }
 
   .features__item {
     flex-basis: 33.33%;
+    padding-left: 45px;
+    padding-right: 45px;
+
+    &::before {
+      top: -100px;
+      left: calc(50% - 35px);
+      width: 70px;
+      height: 73px;
+    }
+  }
+
+  .features__item--souvenir {
+    order: 3;
   }
 
   .features__desc {
+    margin-bottom: 0;
+
     text-align: center;
   }
 
