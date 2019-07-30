@@ -45,8 +45,8 @@
       <section class="review">
 
         <header class="review__header">
-          <h1 class="title review__title">Оставьте свой отзыв</h1>
-          <p class="desc review__desc">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+          <h1 class="title">Оставьте свой отзыв</h1>
+          <p class="desc">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
         </header>
 
         <form class="form" action="https://echo.htmlacademy.ru" method="post">
@@ -205,16 +205,20 @@
 
     </footer>
 
-    <section class="modal modal__fail">
-      <h2 class="title">Что-то пошло не так!</h2>
-      <p class="desc desc--others">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
-      <button class="btn btn--less" type="button">OK</button>
+    <section class="modal fail">
+      <h2 class="title fail__title">Что-то пошло не так!</h2>
+      <p class="desc fail__desc">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+      <button class="btn fail__btn" type="button">OK</button>
     </section>
 
-    <section class="modal modal__success">
-      <h2 class="title">Ваш отзыв отправлен!</h2>
-      <p class="desc desc--others">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.</p>
-      <button class="btn" type="button">Закрыть окно</button>
+    <section class="modal success">
+      <div class="success__text-wrapper">
+        <h2 class="title success__title">Ваш отзыв отправлен!</h2>
+        <p class="desc success__desc">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.</p>
+      </div>
+      <div class="success__btn-wrapper">
+        <button class="btn success__btn" type="button">Закрыть окно</button>
+      </div>
     </section>
 
 

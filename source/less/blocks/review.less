@@ -1,13 +1,26 @@
-// .review {
-//   width: 320px;
-//   padding: 0 20px;
-//   margin: 0 auto;
-// }
-
-.review__title {
-  margin-bottom: 30px;
+.review {
+  width: 100%;
+  padding: 0 20px;
+  margin: 0 auto;
 }
 
-.review__desc {
-  margin-bottom: 40px;
+.review__header {
+  width: 280px;
+  margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+  .review {
+    padding: 0 60px;
+  }
+
+  .review__header {
+    width: 450px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .review {
+    padding: 0 120px;
+  }
 }
