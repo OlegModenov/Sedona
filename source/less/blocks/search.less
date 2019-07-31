@@ -1,3 +1,40 @@
+.search {
+  padding: 30px 20px 50px 20px;
+}
+
 .search__btn {
+  display: block;
+
+  padding-top: 16px;
+  padding-bottom: 16px;
+  margin: 0 auto;
+
   font-size: 21px;
+}
+
+.search__title {
+  margin-bottom: 20px;
+
+  font-size: 21px;
+}
+
+.search__desc {
+  margin-bottom: 35px;
+  line-height: 24px;
+}
+
+@media (min-width: 768px) {
+  .search {
+    margin: 0 auto;
+  }
+
+  .search__desc {
+    width: 460px;
+    margin: 0 auto;
+    margin-bottom: 35px;
+  }
+
+  .search__btn {
+    width: 460px;
+  }
 }

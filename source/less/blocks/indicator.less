@@ -1,0 +1,66 @@
+// фон для радиокнопки
+.indicator {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 55px;
+  height: 55px;
+
+  background-color: @grey-light;
+  border-radius: 50%;
+
+  &:hover,
+  &:focus {
+    background-color: @grey-dark;
+  }
+
+  &:active {
+    background-color: @grey-darker;
+  }
+}
+
+// отметка в радиокнопке
+.field__radio:checked + .indicator::before {
+  content: "";
+
+  position: absolute;
+  top: 16px;
+  left: 16px;
+
+  width: 22px;
+  height: 22px;
+
+  background-color: @black;
+  border-radius: 50%;
+}
+
+.field__radio:checked + .indicator:active::before {
+  background-color: @grey-darker;
+}
+
+// фон для чекбокса
+.checkbox-indicator {
+  border-radius: 20%;
+}
+
+// отметка в чекбоксе
+.field__checkbox:checked + .indicator::before {
+  content: "";
+
+  position: absolute;
+  top: 16px;
+  left: 16px;
+
+  width: 25px;
+  height: 20px;
+
+  background-color: transparent;
+  background-image: url("../img/icon-tick.svg");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+}
+
+.field__checkbox:checked + .indicator:active::before {
+  background-image: url("../img/icon-tick-grey.svg");
+}

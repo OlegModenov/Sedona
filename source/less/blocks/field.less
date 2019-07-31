@@ -1,19 +1,57 @@
+.field {
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
+.field__legend {
+  margin-bottom: 25px;
+}
+
 .field__list {
+  display: flex;
+  flex-direction: column;
+
+  padding: 0;
+  margin: 0;
+
   list-style: none;
 }
 
-.field__element {
-  font: inherit;
-  background-color: #f2f2f2;
-  border: 2px solid #f2f2f2;
+.field__item {
+  position: relative;
+
+  display: flex;
+  align-items: center;
+  min-height: 55px;
+  padding-left: 78px;
+  margin-bottom: 15px;
 }
 
-.field__element:hover {
-  background-color: #e5e5e5;
-}
+.field__text {
+  width: 280px;
+  padding: 15px 22px;
+  padding-right: 70px;
 
-.field__element:focus {
-  background-color: #ffffff;
+  font-family: "PT Sans", "Arial", sans-serif;
+
+  background-color: @grey-light;
+  border: 2px solid @grey-light;
+
+  &:hover {
+    background-color: @grey-dark;
+    border: 2px solid @grey-dark;
+  }
+
+  &:focus {
+    background-color: @white;
+    outline: none;
+  }
+
+  &::placeholder {
+    font-weight: 700;
+    color: @black;
+  }
 }
 
 .field__label {
@@ -24,5 +62,9 @@
   text-transform: uppercase;
   font-weight: 400;
   font-size: 14px;
-  color: #333333;
+  color: @grey-text;
+}
+
+.field__area {
+  width: 100%;
 }

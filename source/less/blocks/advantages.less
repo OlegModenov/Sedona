@@ -1,0 +1,65 @@
+.advantages__header {
+  position: relative;
+  padding: 45px 20px 30px 20px;
+  margin: 0 auto;
+  // margin-bottom: 42px;
+
+  // // подрезающая маска
+  // &::before {
+  //   content: "";
+  //   position: absolute;
+  //   left: 0;
+  //   bottom: -40px;
+  //   z-index: 1;
+
+  //   width: 320px;
+  //   height: 37px;
+
+  // background-image: url("../img/bg-triangle.svg");
+  // background-position: 0 0;
+  // background-repeat: no-repeat;
+  // }
+
+  // /*Синий фон для подрезающей маски*/
+  // &::after {
+  //   content: "";
+
+  //   position: absolute;
+  //   bottom: -42px;
+  //   left: 0;
+
+  //   width: 320px;
+  //   height: 20px;
+
+  //   background-color: @blue;
+  // }
+}
+
+.advantages__row--grey {
+  background-color: @grey;
+}
+
+.advantages__title {
+  margin-bottom: 35px;
+}
+
+@media (min-width: 768px) {
+  .advantages__row {
+    display: flex;
+    width: 100%;
+  }
+
+  .advantages__header {
+    width: 500px;
+    margin: 0 auto;
+
+    &::after,
+    &::before {
+      display: none;
+    }
+  }
+
+  .advantages__row--reverse .advantage {
+    order: 2;
+  }
+}

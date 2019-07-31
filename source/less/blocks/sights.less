@@ -1,0 +1,28 @@
+.sights {
+  display: flex;
+}
+
+@media (min-width: 768px) {
+  .sights {
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 500px;
+
+    margin: 0 auto;
+  }
+
+  .sights__item {
+    width: 50%;
+  }
+}
+
+@media (min-width: 1280px) {
+  .sights {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .sights__item {
+    width: 25%;
+  }
+}

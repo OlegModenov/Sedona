@@ -1,13 +1,74 @@
-.site-list__item:hover,
-.site-list__item:focus {
-  background-color: #669ec0;
+.site-list {
+  font-size: 18px;
+  line-height: 40px;
+  color: @white;
 }
 
-.site-list__item:active {
-  background-color: #5496bd;
-  opacity: 0.3;
+.site-list__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 56px;
+
+  box-shadow:
+    0 -1px rgba(255, 255, 255, 0.2),
+    0 1px 2px rgba(0, 0, 0, 0.2);
+
+  &:hover,
+  &:focus {
+    background-color: @blue-hover;
+  }
+
+  &:active {
+    background-color: @blue-active;
+  }
+}
+
+.site-list__item:active .site-list__link {
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .site-list__link {
-  color: #ffffff;
+  color: @white;
+}
+
+@media (min-width: 768px) {
+  .site-list {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 14px;
+    line-height: 26px;
+  }
+
+  .site-list__item {
+    width: 20%;
+    box-shadow: none;
+
+    &:hover,
+    &:focus,
+    &:active {
+      background-color: @white;
+    }
+
+    &:nth-child(4n+2) {
+      margin-right: 20%;
+    }
+  }
+
+  .site-list__item:hover .site-list__link {
+    color: @blue;
+  }
+
+  .site-list__item:active .site-list__link {
+    color: rgba(0, 0, 0, 0.3);
+  }
+
+  // не работает, надо доделать
+  .site-list__item:focus .site-list__link {
+    color: #766357;
+  }
+
+  .site-list__link {
+    color: @black;
+  }
 }

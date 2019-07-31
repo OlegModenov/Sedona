@@ -1,3 +1,73 @@
+.form {
+  width: 100%;
+}
+
+.form__emotions {
+  display: block;
+}
+
 .form__btn {
   font-size: 21px;
+  padding-top: 16px;
+  padding-bottom: 16px;
 }
+
+.form__explanation {
+  display: none;
+
+  font-size: 14px;
+  color: @grey-text;
+  font-weight: 400;
+}
+
+@media (min-width: 768px) {
+  .form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .form__impress {
+    order: -3;
+    width: 50%;
+  }
+
+  .form__person {
+    order: -2;
+    width: 268px;
+  }
+
+  .form__person .field__legend {
+    text-align: left;
+  }
+
+  .form__contacts {
+    order: -1;
+    width: 100%;
+  }
+
+  .form__sights {
+    width: 100%;
+  }
+
+  .form__emotions {
+    width: 100%;
+  }
+
+  .form__btn {
+
+    width: 50%;
+  }
+
+  .form__explanation {
+
+    display: block;
+    margin-left: auto;
+  }
+}
+
+// @media (min-width: 1280px) {
+//   .form {
+//     padding: 0 120px;
+//   }
+// }
