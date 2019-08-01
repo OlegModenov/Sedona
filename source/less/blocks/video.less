@@ -1,0 +1,33 @@
+.video__icons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  margin-top: -7px;
+  padding: 0 20px;
+
+  width: 280px;
+  min-height: 66px;
+
+  background-color: @grey-light;
+}
+
+.video__icon--subscribes {
+  margin-left: 120px;
+}
+
+@media (min-width: 768px) {
+  .video {
+    position: relative;
+  }
+
+  .video__icons {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+
+    width: 100%;
+
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+}
