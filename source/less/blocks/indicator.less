@@ -7,16 +7,16 @@
   width: 55px;
   height: 55px;
 
-  background-color: @grey-light;
+  background-color: @radio-color;
   border-radius: 50%;
 
   &:hover,
   &:focus {
-    background-color: @grey-dark;
+    background-color: @radio-hover;
   }
 
   &:active {
-    background-color: @grey-darker;
+    background-color: @radio-active;
   }
 }
 
@@ -36,7 +36,7 @@
 }
 
 .field__radio:checked + .indicator:active::before {
-  background-color: @grey-darker;
+  background-color: @radio-active;
 }
 
 // фон для чекбокса
