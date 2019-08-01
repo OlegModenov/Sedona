@@ -10,6 +10,7 @@
   line-height: 24px;
   text-align: left;
 
+  //серые полоски
   &::after {
     content: "";
 
@@ -24,14 +25,18 @@
   }
 }
 
-.post__image {
-  order: -1;
+// .post__image {
+//   margin-bottom: 15px;
+// }
+
+.post__wrapper {
+  padding-top: 10px;
 }
 
 .post__title {
   margin: 0;
+  margin-bottom: 5px;
   width: 100%;
-
 
   font-size: 14px;
   line-height: 24px;
@@ -39,10 +44,15 @@
 
 .post__author {
   margin: 0;
+  margin-bottom: 10px;
   width: 100%;
 
   text-transform: none;
   font-weight: 400;
+}
+
+.post__likes-wrapper {
+  display: flex;
 }
 
 .post__btn {
@@ -71,5 +81,43 @@
     &::after {
       display: none;
     }
+  }
+
+  .post__text {
+    width: 80%;
+  }
+
+  .post__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    padding-right: 30px;
+
+    width: 100%;
+    background-color: @post-color;
+  }
+
+  .post__author {
+    margin: 0;
+  }
+}
+
+@media (min-width: 1200px) {
+  .post {
+    color: @white;
+    padding-bottom: 0;
+  }
+
+  .post__wrapper {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+
+  .post__btn {
+    background-image: url("../img/icon-like-white.svg");
   }
 }
