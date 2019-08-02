@@ -81,6 +81,7 @@
     &::after {
       display: none;
     }
+    padding: 0;
   }
 
   .post__text {
@@ -95,7 +96,11 @@
     padding-right: 30px;
 
     width: 100%;
-    background-color: @post-color;
+    background-color: @post-color-light;
+  }
+
+  .post__wrapper--dark {
+    background-color: @post-color-dark;
   }
 
   .post__author {
@@ -106,7 +111,6 @@
 @media (min-width: 1200px) {
   .post {
     color: @white;
-    padding-bottom: 0;
   }
 
   .post__wrapper {

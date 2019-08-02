@@ -21,13 +21,39 @@
     position: relative;
   }
 
+  // .video__image {
+  //   widows: 648px;
+  //   height: 500px;
+  // }
+
   .video__icons {
     position: absolute;
     left: 0;
     bottom: 0;
 
+    margin-bottom: 6px;
+
     width: 100%;
 
     background-color: rgba(0, 0, 0, 0.3);
+  }
+
+  .video__icon--subscribes {
+    margin-left: 500px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .video {
+    width: 800px;
+    margin: 0 auto;
+  }
+
+  // .video__icons {
+
+  // }
+
+  .video__icon--subscribes {
+    margin-left: 650px;
   }
 }
