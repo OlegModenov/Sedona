@@ -76,7 +76,7 @@
   margin: 0;
 }
 
-@media (min-width: 768px) {
+@media (min-width: @tablet) {
   .post {
     &::after {
       display: none;
@@ -108,17 +108,15 @@
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: @desktop) {
   .post {
     color: @white;
   }
 
   .post__wrapper {
-    position: absolute;
-    left: 0;
-    bottom: 0;
+    margin-top: -93px;
 
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: @post-color-transparent;
   }
 
   .post__btn {

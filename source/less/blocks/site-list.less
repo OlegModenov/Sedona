@@ -25,14 +25,14 @@
 }
 
 .site-list__item:active .site-list__link {
-  color: rgba(255, 255, 255, 0.3);
+  color: @white-transparent;
 }
 
 .site-list__link {
   color: @white;
 }
 
-@media (min-width: 768px) {
+@media (min-width: @tablet) {
   .site-list {
     display: flex;
     flex-wrap: wrap;
@@ -60,7 +60,7 @@
   }
 
   .site-list__item:active .site-list__link {
-    color: rgba(0, 0, 0, 0.3);
+    color: @black-transparent;
   }
 
   // не работает, надо доделать

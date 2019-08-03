@@ -9,14 +9,14 @@
   width: 280px;
   min-height: 66px;
 
-  background-color: @grey-light;
+  background-color: @video-color;
 }
 
 .video__icon--subscribes {
   margin-left: 120px;
 }
 
-@media (min-width: 768px) {
+@media (min-width: @tablet) {
   .video {
     position: relative;
   }
@@ -27,15 +27,13 @@
   // }
 
   .video__icons {
-    position: absolute;
-    left: 0;
-    bottom: 0;
-
+    margin-top: -100px;
     margin-bottom: 6px;
 
+    min-height: 93px;
     width: 100%;
 
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: @video-color-transparent;
   }
 
   .video__icon--subscribes {
@@ -43,7 +41,7 @@
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: @desktop) {
   .video {
     width: 800px;
     margin: 0 auto;
