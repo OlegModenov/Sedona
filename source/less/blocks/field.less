@@ -47,7 +47,8 @@
 
 .field__text {
   width: 280px;
-  padding: 15px 22px;
+  min-height: 59px;
+  padding: 16px 22px;
   padding-right: 70px;
 
   font-family: @deafult-font;
@@ -84,6 +85,13 @@
 
 .field__area {
   width: 100%;
+
+  &::placeholder {
+    font-weight: 700;
+    color: @black;
+    padding-left: 20px;
+    padding-top: 20px;
+  }
 }
 
 @media (min-width: @tablet) {

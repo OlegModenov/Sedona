@@ -1,4 +1,6 @@
 .contacts__item {
+  position: relative;
+
   width: 100%;
   margin-bottom: 15px;
 }
@@ -11,6 +13,21 @@
 
 .contacts__item input {
   width: 100%;
+}
+
+.contacts__phone,
+.contacts__mail {
+  position: absolute;
+  top: 36px;
+  right: 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 58px;
+  height: 58px;
+
+  background-color: @grey;
 }
 
 @media (min-width: @desktop) {
@@ -45,5 +62,14 @@
 
   .contacts__item:first-child label {
     width: 80px;
+  }
+
+  .contacts__phone {
+    right: 86px;
+    top: 0;
+  }
+
+  .contacts__mail {
+    top: 0;
   }
 }
