@@ -94,14 +94,75 @@
   }
 }
 
+.field__indicator {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 55px;
+  height: 55px;
+
+  background-color: @radio-color;
+  border-radius: 50%;
+
+  &:hover,
+  &:focus {
+    background-color: @radio-hover;
+  }
+
+  &:active {
+    background-color: @radio-active;
+  }
+}
+
+// отметка в радиокнопке
+.field__radio:checked + .field__indicator::before {
+  content: "";
+
+  width: 22px;
+  height: 22px;
+
+  background-color: @black;
+  border-radius: 50%;
+}
+
+.field__radio:checked + .field__indicator:active::before {
+  background-color: @radio-active;
+}
+
+// фон для чекбокса
+.field__indicator--checkbox {
+  border-radius: 20%;
+}
+
+// отметка в чекбоксе
+.field__checkbox:checked + .field__indicator::before {
+  content: "";
+
+  position: absolute;
+  top: 16px;
+  left: 16px;
+
+  width: 25px;
+  height: 20px;
+
+  background-color: transparent;
+  background-image: url("../img/icon-tick.svg");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+}
+
+.field__checkbox:checked + .field__indicator:active::before {
+  background-image: url("../img/icon-tick-grey.svg");
+}
+
 @media (min-width: @tablet) {
   .field::after {
     display: none;
   }
-
-  // .field__legend {
-  //   position: relative;
-  // }
 
   .field__legend {
     font-size: 21px;
