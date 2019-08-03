@@ -1,4 +1,5 @@
 .fail {
+  display: none;
   width: 320px;
   margin: 0 auto;
   padding: 43px 52px 35px 52px;
@@ -20,4 +21,25 @@
   width: 180px;
 
   font-size: 18px;
+}
+
+@media (min-width: @tablet) {
+  .fail {
+    width: 400px;
+    padding: 65px 60px 50px 60px;
+  }
+
+  .fail__title {
+    font-size: 30px;
+    line-height: 40px;
+  }
+
+  .fail__desc {
+    margin-bottom: 35px;
+  }
+
+  .fail__btn {
+    width: 272px;
+    font-size: 21px;
+  }
 }
