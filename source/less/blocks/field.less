@@ -1,7 +1,24 @@
 .field {
+  position: relative;
+
   border: none;
   padding: 0;
   margin: 0;
+
+  //серые полоски
+  //не работает last-child
+  &:not(:nth-child(5))::after {
+    content: "";
+
+    position: absolute;
+    left: -20px;
+    bottom: 0;
+
+    width: 320px;
+    height: 1px;
+
+    background-color: @grey;
+  }
 }
 
 .field__legend {
@@ -67,4 +84,45 @@
 
 .field__area {
   width: 100%;
+}
+
+@media (min-width: @tablet) {
+  .field::after {
+    display: none;
+  }
+
+  // .field__legend {
+  //   position: relative;
+  // }
+
+  .field__legend {
+    font-size: 21px;
+  }
+
+  .field__legend--with-stripe {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    width: 100%;
+
+    &::before,
+    &::after {
+      content: "";
+
+      width: 125px;
+      height: 1px;
+
+      background-color: @grey-darker;
+    }
+  }
+}
+
+@media (min-width: @desktop) {
+  .field__legend--with-stripe {
+    &::before,
+    &::after {
+      width: 280px;
+    }
+  }
 }

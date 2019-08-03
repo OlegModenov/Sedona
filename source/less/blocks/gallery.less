@@ -3,9 +3,25 @@
 }
 
 .gallery__header {
+  position: relative;
+
   padding-top: 40px;
   padding-bottom: 15px;
   margin: 0 auto;
+
+  //серая полоска
+  &::after {
+    content: "";
+
+    position: absolute;
+    left: -20px;
+    bottom: 0;
+
+    width: 320px;
+    height: 1px;
+
+    background-color: @grey;
+  }
 }
 
 .gallery__title {
@@ -21,6 +37,14 @@
     padding-top: 75px;
     padding-bottom: 75px;
     width: 430px;
+
+    &::after {
+      display: none;
+    }
+  }
+
+  .gallery__title {
+    font-size: 30px;
   }
 }
 
