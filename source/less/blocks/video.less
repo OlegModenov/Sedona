@@ -1,15 +1,65 @@
+.video__scale {
+  position: relative;
+
+  margin: 0 auto;
+  margin-top: -52px;
+
+  width: 280px;
+  min-height: 45px;
+
+  background-color: @video-color-transparent;
+
+  &::before {
+    content: "";
+
+    position: absolute;
+    top: 18px;
+    left: 60px;
+
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+
+    background-color: @white;
+  }
+
+  &::after {
+    content: "";
+
+    position: absolute;
+    top: 21px;
+    left: 22px;
+
+    width: 235px;
+    height: 3px;
+
+    background-color: @white-transparent2;
+  }
+}
+
 .video__icons {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin: 0 auto;
-  margin-top: -7px;
   padding: 0 20px;
 
   width: 280px;
   min-height: 66px;
 
   background-color: @video-color;
+}
+
+.video__icon {
+  fill: @video-icon-color;
+
+  &:hover {
+    fill: @video-icon-hover;
+  }
+
+  &:active {
+    fill: @video-icon-active;
+  }
 }
 
 .video__icon--subscribes {
@@ -21,12 +71,13 @@
     position: relative;
   }
 
-  // .video__image {
-  //   widows: 648px;
-  //   height: 500px;
-  // }
+  .video__scale {
+    display: none;
+  }
 
   .video__icons {
+    position: relative;
+
     margin-top: -100px;
     margin-bottom: 6px;
 
@@ -34,6 +85,45 @@
     width: 100%;
 
     background-color: @video-color-transparent;
+
+    &::before {
+      content: "";
+
+      position: absolute;
+      top: 43px;
+      left: 207px;
+
+      width: 9px;
+      height: 9px;
+      border-radius: 50%;
+
+      background-color: @white;
+    }
+
+    &::after {
+      content: "";
+
+      position: absolute;
+      top: 50%;
+      left: 93px;
+
+      width: 390px;
+      height: 3px;
+
+      background-color: @white-transparent2;
+    }
+  }
+
+  .video__icon {
+    fill: @video-icon-tablet-color;
+
+    &:hover {
+      fill: @video-icon-tablet-hover;
+    }
+
+    &:active {
+      fill: @video-icon-tablet-active;
+    }
   }
 
   .video__icon--subscribes {
@@ -47,9 +137,9 @@
     margin: 0 auto;
   }
 
-  // .video__icons {
-
-  // }
+  .video__icons::after {
+    width: 540px;
+  }
 
   .video__icon--subscribes {
     margin-left: 650px;
