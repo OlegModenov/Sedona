@@ -37,7 +37,7 @@
       <main>
 
         <div class="promo promo--small">
-          <img class="promo__image" src="img/text-sedona.svg" width="229" height="39" alt="Седона промо">
+          <img class="promo__image promo__image--small" src="img/text-sedona.svg" width="229" height="39" alt="Седона промо">
         </div>
 
         <section class="review">
@@ -68,15 +68,31 @@
             </fieldset>
 
             <fieldset class="field form__contacts">
-              <legend class="field__legend">Контактная информация:</legend>
+              <legend class="field__legend field__legend--with-stripe">Контактная информация:</legend>
               <ul class="field__list contacts">
                 <li class="contacts__item">
                   <label class="field__label field__label--regular" for="phone"><span class = "contacts__hidden">Контактный</span> телефон<sup>*</sup>:</label>
                   <input class="field__text" type="tel" id="phone" name="phone" placeholder="Введите телефон" required>
+                  <div class ="contacts__phone">
+                    <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="18px" height="18px" viewBox="0 0 18 18" enable-background="new 0 0 18 18" xml:space="preserve">
+                      <g id="Page-1">
+                        <g id="Icons-Communication" transform="translate(-85.000000, -126.000000)">
+                          <g id="phone" transform="translate(85.000000, 126.000000)">
+                            <path id="Shape" fill="#010101" d="M3.6,7.8C5,10.6,7.4,12.9,10.2,14.4l2.2-2.2c0.3-0.3,0.699-0.4,1-0.2c1.1,0.4,2.3,0.6,3.6,0.6 c0.6,0,1,0.4,1,1V17c0,0.6-0.4,1-1,1C7.6,18,0,10.4,0,1c0-0.6,0.4-1,1-1h3.5c0.6,0,1,0.4,1,1c0,1.2,0.2,2.4,0.6,3.6 c0.1,0.3,0,0.7-0.2,1L3.6,7.8L3.6,7.8z"/>
+                          </g>
+                        </g>
+                      </g>
+                    </svg>
+                  </div>
                 </li>
                 <li class="contacts__item">
                   <label class="field__label field__label--regular" for="mail">Электронная почта<sup>*</sup>:</label>
                   <input class="field__text" type="email" id="mail" name="mail" placeholder="Введите e-mail" required>
+                  <div class="contacts__mail">
+                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="16px" height="16px" viewBox="0 0 16 16" enable-background="new 0 0 16 16" xml:space="preserve">
+                      <path d="M8,10c-0.266,0-0.5-0.094-1-0.336L0,6v7c0,0.55,0.45,1,1,1h14c0.55,0,1-0.45,1-1V6L9,9.664C8.5,9.906,8.266,10,8,10z M15,2 H1C0.45,2,0,2.45,0,3v0.758l8,4.205l8-4.205V3C16,2.45,15.55,2,15,2z"/>
+                    </svg>
+                  </div>
                 </li>
               </ul>
             </fieldset>
@@ -87,21 +103,21 @@
                 <li class="field__item">
                   <label class="field__label" for="positive">
                     <input class="field__radio visually-hidden" type="radio" id="positive" name="impressions" value="positive" checked>
-                    <span class="indicator radio-indicator"></span>
+                    <span class="field__indicator field__indicator--radio"></span>
                     Скорее положительное
                   </label>
                 </li>
                 <li class="field__item">
                   <label class="field__label" for="negative">
                     <input class="field__radio visually-hidden" type="radio" id="negative" name="impressions" value="negative">
-                    <span class="indicator radio-indicator"></span>
+                    <span class="field__indicator field__indicator--radio"></span>
                     Скорее отрицательное
                   </label>
                 </li>
                 <li class="field__item">
                   <label class="field__label" for="dont-know">
                     <input class="field__radio visually-hidden" type="radio" id="dont-know" name="impressions" value="dont-know">
-                    <span class="indicator radio-indicator"></span>
+                    <span class="field__indicator field__indicator--radio"></span>
                     Затрудняюсь ответить
                   </label>
                 </li>
@@ -109,37 +125,37 @@
             </fieldset>
 
             <fieldset class="field form__sights">
-              <legend class="field__legend">Посещенные достопримечательности:</legend>
+              <legend class="field__legend field__legend--with-stripe">Посещенные достопримечательности:</legend>
               <ul class="field__list sights">
                 <li class="field__item sights__item">
                   <label class="field__label" for="bridge">
                     <input class="field__checkbox visually-hidden" type="checkbox" id="bridge" name="bridge" checked>
-                    <span class="indicator checkbox-indicator"></span>
+                    <span class="field__indicator field__indicator--checkbox"></span>
                     Мост дьявола</label>
                 </li>
                 <li class="field__item sights__item">
                   <label class="field__label" for="mountain">
                     <input class="field__checkbox visually-hidden" type="checkbox" id="mountain" name="mountain " checked>
-                    <span class="indicator checkbox-indicator"></span>
+                    <span class="field__indicator field__indicator--checkbox"></span>
                     Гора-Колокол</label>
                 </li>
                 <li class="field__item sights__item">
                   <label class="field__label" for="park">
                     <input class="field__checkbox visually-hidden" type="checkbox" id="park" name="park" checked>
-                    <span class="indicator checkbox-indicator"></span>
+                    <span class="field__indicator field__indicator--checkbox"></span>
                     Слайд-парк</label>
                 </li>
                 <li class="field__item sights__item">
                   <label class="field__label" for="rocks">
                     <input class="field__checkbox visually-hidden" type="checkbox" id="rocks" name="rocks">
-                    <span class="indicator checkbox-indicator"></span>
+                    <span class="field__indicator field__indicator--checkbox"></span>
                     Красные скалы</label>
                 </li>
               </ul>
             </fieldset>
 
             <fieldset class="field form__emotions">
-              <legend class="field__legend">Опишите свои эмоции:</legend>
+              <legend class="field__legend field__legend--with-stripe">Опишите свои эмоции:</legend>
               <textarea class="field__area" rows="6" cols="28" name="emotions__description" id="emotions__description" placeholder="Опишите подробно все свои восторги"></textarea>
             </fieldset>
 
@@ -218,6 +234,8 @@
           <button class="btn success__btn" type="button">Закрыть окно</button>
         </div>
       </section>
+
+      <!-- <div class="modal-overlay"></div> -->
 
     </div>
   </body>

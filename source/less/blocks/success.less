@@ -1,4 +1,5 @@
 .success {
+  display: none;
   margin: 0 auto;
 
   width: 320px;
@@ -28,4 +29,27 @@
   padding-bottom: 17px;
 
   font-size: 18px;
+}
+
+@media (min-width: @tablet) {
+  .success {
+    width: 640px;
+  }
+
+  .success__text-wrapper {
+    padding: 64px 110px 35px 110px;
+  }
+
+  .success__title {
+    font-size: 30px;
+  }
+
+  .success__btn-wrapper {
+    padding: 44px;
+  }
+
+  .success__btn {
+    width: 460px;
+    font-size: 21px;
+  }
 }

@@ -10,6 +10,7 @@
   line-height: 24px;
   text-align: left;
 
+  //серые полоски
   &::after {
     content: "";
 
@@ -20,18 +21,22 @@
     width: 320px;
     height: 1px;
 
-    background-color: #d6d6d6;
+    background-color: @grey;
   }
 }
 
-.post__image {
-  order: -1;
+// .post__image {
+//   margin-bottom: 15px;
+// }
+
+.post__wrapper {
+  padding-top: 10px;
 }
 
 .post__title {
   margin: 0;
+  margin-bottom: 5px;
   width: 100%;
-
 
   font-size: 14px;
   line-height: 24px;
@@ -39,10 +44,15 @@
 
 .post__author {
   margin: 0;
+  margin-bottom: 10px;
   width: 100%;
 
   text-transform: none;
   font-weight: 400;
+}
+
+.post__likes-wrapper {
+  display: flex;
 }
 
 .post__btn {
@@ -66,10 +76,50 @@
   margin: 0;
 }
 
-@media (min-width: 768px) {
+@media (min-width: @tablet) {
   .post {
     &::after {
       display: none;
     }
+    padding: 0;
+  }
+
+  .post__text {
+    width: 80%;
+  }
+
+  .post__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    padding-right: 30px;
+
+    width: 100%;
+    background-color: @post-color-light;
+  }
+
+  .post__wrapper--dark {
+    background-color: @post-color-dark;
+  }
+
+  .post__author {
+    margin: 0;
+  }
+}
+
+@media (min-width: @desktop) {
+  .post {
+    color: @white;
+  }
+
+  .post__wrapper {
+    margin-top: -93px;
+
+    background-color: @post-color-transparent;
+  }
+
+  .post__btn {
+    background-image: url("../img/icon-like-white.svg");
   }
 }

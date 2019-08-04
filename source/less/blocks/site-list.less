@@ -16,23 +16,23 @@
 
   &:hover,
   &:focus {
-    background-color: @blue-hover;
+    background-color: @menu-hover;
   }
 
   &:active {
-    background-color: @blue-active;
+    background-color: @menu-active;
   }
 }
 
 .site-list__item:active .site-list__link {
-  color: rgba(255, 255, 255, 0.3);
+  color: @white-transparent;
 }
 
 .site-list__link {
   color: @white;
 }
 
-@media (min-width: 768px) {
+@media (min-width: @tablet) {
   .site-list {
     display: flex;
     flex-wrap: wrap;
@@ -60,12 +60,13 @@
   }
 
   .site-list__item:active .site-list__link {
-    color: rgba(0, 0, 0, 0.3);
+    color: @black-transparent;
   }
 
   // не работает, надо доделать
   .site-list__item:focus .site-list__link {
-    color: #766357;
+    // color: #766357;
+    color: red;
   }
 
   .site-list__link {

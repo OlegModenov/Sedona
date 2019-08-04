@@ -1,28 +1,28 @@
 .btn {
   width: 280px;
 
-  font-family: "PT Sans", "Arial", sans-serif;
+  font-family: @deafult-font;
   vertical-align: middle;
   color: @white;
   text-transform: uppercase;
   font-weight: 400;
 
   border: none;
-  background-color: @blue;
+  background-color: @btn-color;
 
   &:hover,
   &:focus {
-    background-color: @blue-hover;
+    background-color: @btn-hover;
   }
 
   &:active {
-    background-color: @blue-active;
-    color: rgba(255, 255, 255, 0.3);
+    background-color: @btn-active;
+    color: @btn-active-text;
   }
 
   &:disabled,
   &.disabled {
-    background-color: @grey-dark;
+    background-color: @btn-disabled;
     pointer-events: none;
   }
 }

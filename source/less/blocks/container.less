@@ -1,15 +1,18 @@
 .container {
   width: 320px;
   margin: 0 auto;
+  box-shadow:
+    40px 0 @grey-light,
+    -40px 0 @grey-light;
 }
 
-@media (min-width: 768px) {
+@media (min-width: @tablet) {
   .container {
     width: 768px;
   }
 }
 
-@media (min-width: 1280px) {
+@media (min-width: @desktop) {
   .container {
     width: 1200px;
   }
