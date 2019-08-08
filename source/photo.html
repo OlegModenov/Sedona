@@ -22,14 +22,18 @@
               <a class="site-list__link" href="form.html">Форма отзыва</a>
             </li>
             <li class="site-list__item">
-              <a class="site-list__link" href="#">HTML Academy</a>
+              <a class="site-list__link" href="https://htmlacademy.ru/">HTML Academy</a>
             </li>
           </ul>
         </nav>
 
         <div class="page-header__wrapper">
           <a class="page-header__logo">
-            <img class="page-header__logo-image" src="img/logo-sedona-mobile.svg" width="102" height="83" alt="Седона логотип">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg">
+              <source media="(min-width: 768px)" srcset="img/logo-sedona-tablet.svg">
+              <img class="page-header__logo-image" src="img/logo-sedona-mobile.svg" alt="Седона логотип">
+            </picture>
           </a>
           <button class="btn page-header__toggle page-header__toggle--opened" type="button"><span class="visually-hidden">Кнопка переключения</span></button>
         </div>
@@ -54,7 +58,11 @@
             <ul class="pictures__list">
               <li class="pictures__item pictures__item--big">
                 <article class="post">
-                  <img class="post__image" src="img/photo-1-mobile.jpg" width="280" height="280" alt="Народные просторы">
+                  <picture>
+                    <source media="(min-width: 1200px)" srcset="img/photo-sunset-desktop@1x.jpg 1x, img/photo-sunset-desktop@2x.jpg 2x">
+                    <source media="(min-width: 768px)" srcset="img/photo-sunset-tablet@1x.jpg 1x, img/photo-sunset-tablet@2x.jpg 2x">
+                    <img class="post__image" src="img/photo-sunset-mobile@1x.jpg" srcset="img/photo-sunset-mobile@2x.jpg 2x" alt="Народные просторы">
+                  </picture>
                   <div class="post__wrapper">
                     <div class="post__text">
                       <h3 class="post__title">Народные просторы</h3>
@@ -69,7 +77,11 @@
               </li>
               <li class="pictures__item">
                 <article class="post">
-                  <img class="post__image" src="img/photo-2-mobile.jpg" width="280" height="280" alt="Местная растительность">
+                  <picture>
+                    <source media="(min-width: 1200px)" srcset="img/photo-cactus-desktop@1x.jpg 1x, img/photo-cactus-desktop@2x.jpg 2x">
+                    <source media="(min-width: 768px)" srcset="img/photo-cactus-tablet@1x.jpg 1x, img/photo-cactus-tablet@2x.jpg 2x">
+                    <img class="post__image" src="img/photo-cactus-mobile@1x.jpg" srcset="img/photo-cactus-mobile@2x.jpg 2x" alt="Местная растительность">
+                  </picture>
                   <div class="post__wrapper">
                     <div class="post__text">
                       <h3 class="post__title">Местная растительность</h3>
@@ -84,8 +96,12 @@
               </li>
               <li class="pictures__item">
                 <article class="post">
-                  <img class="post__image" src="img/photo-3-mobile.jpg" width="280" height="280" alt="Дорога на север">
-                  <div class="post__wrapper post__wrapper--dark">
+                  <picture>
+                    <source media="(min-width: 1200px)" srcset="img/photo-roads-desktop@1x.jpg 1x, img/photo-roads-desktop@2x.jpg 2x">
+                    <source media="(min-width: 768px)" srcset="img/photo-roads-tablet@1x.jpg 1x, img/photo-roads-tablet@2x.jpg 2x">
+                    <img class="post__image" src="img/photo-roads-mobile@1x.jpg" srcset="img/photo-roads-mobile@2x.jpg 2x" alt="Дорога на север">
+                  </picture>
+                  <div class="post__wrapper">
                     <div class="post__text">
                       <h3 class="post__title">Дорога на север</h3>
                       <p class="post__author">Автор фото: Петр</p>
@@ -99,7 +115,11 @@
               </li>
               <li class="pictures__item">
                 <article class="post">
-                  <img class="post__image" src="img/photo-4-mobile.jpg" width="280" height="280" alt="Мост дьявола">
+                  <picture>
+                    <source media="(min-width: 1200px)" srcset="img/photo-bridge-desktop@1x.jpg 1x, img/photo-bridge-desktop@2x.jpg 2x">
+                    <source media="(min-width: 768px)" srcset="img/photo-bridge-tablet@1x.jpg 1x, img/photo-bridge-tablet@2x.jpg 2x">
+                    <img class="post__image" src="img/photo-bridge-mobile@1x.jpg" srcset="img/photo-bridge-mobile@2x.jpg 2x" alt="Мост дьявола">
+                  </picture>
                   <div class="post__wrapper">
                     <div class="post__text">
                       <h3 class="post__title">Мост дьявола</h3>
@@ -122,7 +142,11 @@
             <p class="desc doubt__desc">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
           </div>
           <div class="video">
-            <img class="video__image" src="img/video-mobile@1x.jpg" width="320" height="200" alt="Видео">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/video-desktop@1x.jpg 1x, img/video-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/video-tablet@1x.jpg 1x, img/video-tablet@2x.jpg 2x">
+                <img src="img/video-mobile@1x.jpg" srcset="img/video-mobile@2x.jpg 2x" alt="видео">
+              </picture>
             <div class="video__scale"></div>
             <div class="video__icons">
               <svg class="video__icon video__icon--replay" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="16px" height="20px" viewBox="0 0 16 20" enable-background="new 0 0 16 20" xml:space="preserve">

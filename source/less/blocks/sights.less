@@ -6,7 +6,7 @@
   .sights {
     flex-direction: row;
     flex-wrap: wrap;
-    width: 500px;
+    padding-left: 97px;
 
     margin: 0 auto;
   }
@@ -18,11 +18,21 @@
 
 @media (min-width: @desktop) {
   .sights {
-    width: 100%;
     justify-content: space-between;
+    padding-left: 0;
+
+    width: 100%;
   }
 
   .sights__item {
-    width: 25%;
+    width: 260px;
+  }
+
+  .sights__item:nth-child(3) {
+    width: 240px;
+  }
+
+  .sights__item:last-child {
+    width: 200px;
   }
 }

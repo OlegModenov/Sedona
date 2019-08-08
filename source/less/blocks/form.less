@@ -67,12 +67,27 @@
   }
 
   .form__impress {
+    position: relative;
     order: -3;
     width: 50%;
+
+    // border-right: 1px solid @grey-darker;
+    &::after {
+      content: "";
+
+      position: absolute;
+      width: 1px;
+      height: 292px;
+
+      background-color: @grey-darker;
+    }
   }
 
-  .form__impress legend {
+  .form__impress legend,
+  .form__person legend {
     margin-bottom: 60px;
+
+    text-align: left;
   }
 
   .form__person {
@@ -80,11 +95,6 @@
 
     order: -2;
     width: 268px;
-  }
-
-  .form__person legend {
-    margin-bottom: 60px;
-    text-align: left;
   }
 
   .form__contacts {
@@ -131,6 +141,10 @@
 @media (min-width: @desktop) {
   .form__person {
     margin-bottom: 50px;
+  }
+
+  .form__impress legend {
+    margin-left: 75px;
   }
 
   .form__contacts legend {
