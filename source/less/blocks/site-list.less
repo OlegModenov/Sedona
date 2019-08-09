@@ -63,13 +63,15 @@
     color: @black-transparent;
   }
 
-  // не работает, надо доделать
-  .site-list__item:focus .site-list__link {
-    // color: #766357;
-    color: red;
-  }
-
   .site-list__link {
     color: @black;
+  }
+
+  .site-list__link--current {
+    color: #766357;
+
+    &:hover {
+      color: #604e43;
+    }
   }
 }
