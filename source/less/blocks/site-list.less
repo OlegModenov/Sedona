@@ -55,21 +55,27 @@
     }
   }
 
-  .site-list__item:hover .site-list__link {
-    color: @blue;
+  .site-list__link {
+    color: @black;
+
+    &:hover {
+      color: @blue;
+    }
   }
 
   .site-list__item:active .site-list__link {
     color: @black-transparent;
   }
 
-  // не работает, надо доделать
-  .site-list__item:focus .site-list__link {
-    // color: #766357;
-    color: red;
-  }
+  .site-list__link--current {
+    color: @brown;
 
-  .site-list__link {
-    color: @black;
+    &:hover {
+      color: @brown-dark;
+    }
+
+    &:active {
+      color: @brown-transparent;
+    }
   }
 }
