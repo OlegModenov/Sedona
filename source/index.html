@@ -4,9 +4,16 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>Седона главная</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="preload" href="fonts/ptsans.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/ptsansbold.woff2" as="font" crossorigin="anonymous">
   </head>
   <body>
+
+    <div style="display: none;">
+      <include src="build/img/sprite.svg"></include>
+    </div>
+
     <div class="container">
       <header class="page-header">
 
@@ -80,22 +87,22 @@
             <h2 class="visually-hidden">Наши преимущества</h2>
             <ul class="features">
               <li class="features__item">
-                <svg class ="features__icon features__icon--house" width="37" height="36"  viewbox="0 0 75 72" aria-hidden="true" role="presentation" focusable="false">
-                  <use xlink:href="img/sprite.svg#house"></use>
+                <svg class="features__icon features__icon--house" width="37" height="36" viewbox="0 0 75 72" aria-hidden="true" role="presentation" focusable="false">
+                  <use xlink:href="#icon-house"></use>
                 </svg>
                 <h3 class="title features__title">Жилье</h3>
                 <p class="desc features__desc">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
               </li>
               <li class="features__item">
-                <svg class ="features__icon features__icon--gift" width="32" height="37" viewbox="0 0 63 75" aria-hidden="true" role="presentation" focusable="false">
-                  <use xlink:href="img/sprite.svg#gift"></use>
+                <svg class="features__icon features__icon--gift" width="32" height="37" viewbox="0 0 63 75" aria-hidden="true" role="presentation" focusable="false">
+                  <use xlink:href="#icon-gift"></use>
                 </svg>
                 <h3 class="title features__title">Сувениры</h3>
                 <p class="desc features__desc">Не только китайского, но и местного производства!</p>
               </li>
               <li class="features__item">
-                <svg class ="features__icon features__icon--burger" width="38" height="35"  viewbox="0 0 76 69" aria-hidden="true" role="presentation" focusable="false">
-                  <use xlink:href="img/sprite.svg#burger"></use>
+                <svg class="features__icon features__icon--burger" width="38" height="35" viewbox="0 0 76 69" aria-hidden="true" role="presentation" focusable="false">
+                  <use xlink:href="#icon-burger"></use>
                 </svg>
                 <h3 class="title features__title">Еда</h3>
                 <p class="desc features__desc">Всегда заказывайте фирменный бургер, Вы не разочаруетесь!</p>
@@ -182,7 +189,7 @@
               <a class="social__link" href="#">
                 <span class="visually-hidden">Твиттер</span>
                 <svg width="17" height="14">
-                  <use xlink:href="img/sprite.svg#twitter"></use>
+                  <use xlink:href="#icon-twitter"></use>
                 </svg>
               </a>
             </li>
@@ -190,7 +197,7 @@
               <a class="social__link" href="#">
                 <span class="visually-hidden">Фейсбук</span>
                 <svg width="9" height="19">
-                  <use xlink:href="img/sprite.svg#facebook"></use>
+                  <use xlink:href="#icon-facebook"></use>
                 </svg>
               </a>
             </li>
@@ -198,7 +205,7 @@
               <a class="social__link" href="#">
                 <span class="visually-hidden">Ютуб</span>
                 <svg width="20" height="14">
-                  <use xlink:href="img/sprite.svg#youtube"></use>
+                  <use xlink:href="#icon-youtube"></use>
                 </svg>
               </a>
             </li>
@@ -209,8 +216,8 @@
           <b class="copyright__text">Разработано</b>
           <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
             <span class="visually-hidden">HTML Academy</span>
-            <svg class="copyright__icon" width="40" height="51"  viewbox="0 0 60 60">
-              <use xlink:href="img/sprite.svg#copyright"></use>
+            <svg class="copyright__icon" width="40" height="51" viewbox="0 0 60 60">
+              <use xlink:href="#icon-htmlacademy"></use>
             </svg>
           </a>
         </div>

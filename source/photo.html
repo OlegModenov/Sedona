@@ -4,9 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>Седона фото</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="preload" href="fonts/ptsans.woff2" as="font">
+    <link rel="preload" href="fonts/ptsansbold.woff2" as="font">
   </head>
   <body>
+
+    <div style="display: none;">
+      <include src="build/img/sprite.svg"></include>
+    </div>
+
     <div class="container">
       <header class="page-header">
 
@@ -59,6 +66,10 @@
               <li class="pictures__item pictures__item--big">
                 <article class="post">
                   <picture>
+                    <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-sunset-desktop@1x.webp 1x, img/photo-sunset-desktop@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-sunset-tablet@1x.webp 1x, img/photo-sunset-tablet@2x.webp 2x">
+                    <source type="image/webp" srcset="img/photo-sunset-mobile@1x.webp 1x, img/photo-sunset-mobile@2x.webp 2x">
+
                     <source media="(min-width: 1200px)" srcset="img/photo-sunset-desktop@1x.jpg 1x, img/photo-sunset-desktop@2x.jpg 2x">
                     <source media="(min-width: 768px)" srcset="img/photo-sunset-tablet@1x.jpg 1x, img/photo-sunset-tablet@2x.jpg 2x">
                     <img class="post__image" src="img/photo-sunset-mobile@1x.jpg" srcset="img/photo-sunset-mobile@2x.jpg 2x" alt="Народные просторы">
@@ -78,6 +89,10 @@
               <li class="pictures__item">
                 <article class="post">
                   <picture>
+                    <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-cactus-desktop@1x.webp 1x, img/photo-cactus-desktop@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-cactus-tablet@1x.webp 1x, img/photo-cactus-tablet@2x.webp 2x">
+                    <source type="image/webp" srcset="img/photo-cactus-mobile@1x.webp 1x, img/photo-cactus-mobile@2x.webp 2x">
+
                     <source media="(min-width: 1200px)" srcset="img/photo-cactus-desktop@1x.jpg 1x, img/photo-cactus-desktop@2x.jpg 2x">
                     <source media="(min-width: 768px)" srcset="img/photo-cactus-tablet@1x.jpg 1x, img/photo-cactus-tablet@2x.jpg 2x">
                     <img class="post__image" src="img/photo-cactus-mobile@1x.jpg" srcset="img/photo-cactus-mobile@2x.jpg 2x" alt="Местная растительность">
@@ -97,6 +112,10 @@
               <li class="pictures__item">
                 <article class="post">
                   <picture>
+                    <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-roads-desktop@1x.webp 1x, img/photo-roads-desktop@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-roads-tablet@1x.webp 1x, img/photo-roads-tablet@2x.webp 2x">
+                    <source type="image/webp" srcset="img/photo-roads-mobile@1x.webp 1x, img/photo-roads-mobile@2x.webp 2x">
+
                     <source media="(min-width: 1200px)" srcset="img/photo-roads-desktop@1x.jpg 1x, img/photo-roads-desktop@2x.jpg 2x">
                     <source media="(min-width: 768px)" srcset="img/photo-roads-tablet@1x.jpg 1x, img/photo-roads-tablet@2x.jpg 2x">
                     <img class="post__image" src="img/photo-roads-mobile@1x.jpg" srcset="img/photo-roads-mobile@2x.jpg 2x" alt="Дорога на север">
@@ -116,6 +135,10 @@
               <li class="pictures__item">
                 <article class="post">
                   <picture>
+                    <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-bridge-desktop@1x.webp 1x, img/photo-bridge-desktop@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-bridge-tablet@1x.webp 1x, img/photo-bridge-tablet@2x.webp 2x">
+                    <source type="image/webp" srcset="img/photo-bridge-mobile@1x.webp 1x, img/photo-bridge-mobile@2x.webp 2x">
+
                     <source media="(min-width: 1200px)" srcset="img/photo-bridge-desktop@1x.jpg 1x, img/photo-bridge-desktop@2x.jpg 2x">
                     <source media="(min-width: 768px)" srcset="img/photo-bridge-tablet@1x.jpg 1x, img/photo-bridge-tablet@2x.jpg 2x">
                     <img class="post__image" src="img/photo-bridge-mobile@1x.jpg" srcset="img/photo-bridge-mobile@2x.jpg 2x" alt="Мост дьявола">
@@ -143,6 +166,10 @@
           </div>
           <div class="video">
               <picture>
+                <source type="image/webp" media="(min-width: 1200px)" srcset="img/video-desktop@1x.webp 1x, img/video-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/video-tablet@1x.webp 1x, img/video-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/video-mobile@1x.webp 1x, img/video-mobile@2x.webp 2x">
+
                 <source media="(min-width: 1200px)" srcset="img/video-desktop@1x.jpg 1x, img/video-desktop@2x.jpg 2x">
                 <source media="(min-width: 768px)" srcset="img/video-tablet@1x.jpg 1x, img/video-tablet@2x.jpg 2x">
                 <img src="img/video-mobile@1x.jpg" srcset="img/video-mobile@2x.jpg 2x" alt="видео">
@@ -151,15 +178,15 @@
             <div class="video__icons">
               <svg class="video__icon video__icon--replay" width="16" height="20" viewbox="0 0 16 20" role="img" aria-labelledby="replay" focusable="false">
                 <title id="replay">Повтор видео</title>
-                <use xlink:href="img/sprite.svg#replay"></use>
+                <use xlink:href="#icon-video-replay"></use>
               </svg>
               <svg class="video__icon video__icon--subscribes" width="32" height="20" viewbox="0 0 32 20" role="img" aria-labelledby="subscribes" focusable="false">
                 <title id="subscribes">Субтитры</title>
-                <use xlink:href="img/sprite.svg#subscribes"></use>
+                <use xlink:href="#icon-video-subtitles"></use>
               </svg>
               <svg class="video__icon video__icon--fullscreen" width="20" height="20" viewbox="0 0 20 20" role="img" aria-labelledby="fullscreen" focusable="false">
                 <title id="fullscreen">Полный экран</title>
-                <use xlink:href="img/sprite.svg#fullscreen"></use>
+                <use xlink:href="#icon-video-fullscreen"></use>
               </svg>
             </div>
           </div>
@@ -179,7 +206,7 @@
                 <a class="social__link" href="#">
                   <span class="visually-hidden">Твиттер</span>
                   <svg width="17" height="14">
-                    <use xlink:href="img/sprite.svg#twitter"></use>
+                    <use xlink:href="#icon-twitter"></use>
                   </svg>
                 </a>
               </li>
@@ -187,7 +214,7 @@
                 <a class="social__link" href="#">
                   <span class="visually-hidden">Фейсбук</span>
                   <svg width="9" height="19">
-                    <use xlink:href="img/sprite.svg#facebook"></use>
+                    <use xlink:href="#icon-facebook"></use>
                   </svg>
                 </a>
               </li>
@@ -195,7 +222,7 @@
                 <a class="social__link" href="#">
                   <span class="visually-hidden">Ютуб</span>
                   <svg width="20" height="14">
-                    <use xlink:href="img/sprite.svg#youtube"></use>
+                    <use xlink:href="#icon-youtube"></use>
                   </svg>
                 </a>
               </li>
@@ -206,8 +233,8 @@
             <b class="copyright__text">Разработано</b>
             <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
               <span class="visually-hidden">HTML Academy</span>
-              <svg class="copyright__icon" width="40" height="51"  viewbox="0 0 60 60">
-                <use xlink:href="img/sprite.svg#copyright"></use>
+              <svg class="copyright__icon" width="40" height="51" viewbox="0 0 60 60">
+                <use xlink:href="#icon-htmlacademy"></use>
               </svg>
             </a>
           </div>
