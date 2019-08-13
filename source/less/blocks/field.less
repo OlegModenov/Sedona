@@ -6,8 +6,7 @@
   margin: 0;
 
   //серые полоски
-  //не работает last-child
-  &:not(:nth-child(5))::after {
+  &:not(:last-of-type)::after {
     content: "";
 
     position: absolute;
@@ -22,6 +21,7 @@
 }
 
 .field__legend {
+  width: 100%;
   margin-bottom: 25px;
 }
 
@@ -47,7 +47,7 @@
 
 .field__text {
   width: 280px;
-  min-height: 59px;
+  min-height: 58px;
   padding: 16px 22px;
   padding-right: 70px;
 
@@ -172,21 +172,36 @@
   }
 
   .field__legend--with-stripe {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-
-    width: 100%;
+    position: relative;
+    // display: flex;
+    // align-items: center;
+    // justify-content: space-between;
 
     &::before,
     &::after {
       content: "";
+      position: absolute;
+      top: 50%;
 
       width: 125px;
       height: 1px;
 
       background-color: @grey-darker;
     }
+
+    &::before {
+      left: 0;
+    }
+
+    &::after {
+      right: 0;
+    }
+  }
+
+  .field__legend--with-stripe span {
+    display: block;
+    margin: 0 auto;
+    width: 300px;
   }
 }
 
