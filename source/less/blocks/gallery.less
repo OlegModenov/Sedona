@@ -7,8 +7,8 @@
 .gallery__header {
   position: relative;
 
-  padding-top: 40px;
-  padding-bottom: 15px;
+  padding-top: 35px;
+  padding-bottom: 29px;
   margin: 0 auto;
 
   //серая полоска
@@ -27,7 +27,11 @@
 }
 
 .gallery__title {
-  margin-bottom: 30px;
+  margin-bottom: 25px;
+}
+
+.gallery__desc {
+  line-height: 24px;
 }
 
 @media (min-width: @tablet) {
@@ -37,7 +41,7 @@
 
   .gallery__header {
     padding-top: 75px;
-    padding-bottom: 75px;
+    padding-bottom: 70px;
     width: 430px;
 
     &::after {
@@ -46,6 +50,7 @@
   }
 
   .gallery__title {
+    margin-bottom: 30px;
     font-size: 30px;
   }
 }
@@ -57,5 +62,9 @@
 
   .gallery__header {
     padding-top: 110px;
+  }
+
+  .gallery__title {
+    margin-bottom: 33px;
   }
 }
