@@ -3,27 +3,29 @@
 }
 
 .form__person {
-  margin-bottom: 20px;
+  margin-bottom: 21px;
 }
 
 .form__person legend {
-  margin-bottom: 25px;
+  margin-bottom: 21px;
 }
 
 .form__contacts {
-  margin-bottom: 20px;
+  margin-bottom: 18px;
+  padding-bottom: 20px;
 }
 
 .form__contacts legend {
-  margin-bottom: 30px;
+  margin-bottom: 19px;
 }
 
 .form__impress {
-  margin-bottom: 20px;
+  margin-bottom: 15px;
+  padding-bottom: 18px;
 }
 
 .form__impress legend {
-  margin-bottom: 25px;
+  margin-bottom: 20px;
 }
 
 .form__sights {
@@ -31,12 +33,12 @@
 }
 
 .form__sights legend {
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 }
 
 .form__emotions {
   display: block;
-  margin-bottom: 50px;
+  margin-bottom: 43px;
 }
 
 .form__emotions legend {
@@ -46,7 +48,7 @@
 .form__btn {
   padding-top: 16px;
   padding-bottom: 16px;
-  margin-bottom: 45px;
+  margin-bottom: 38px;
 
   font-size: 21px;
 }
@@ -68,6 +70,7 @@
 
   .form__impress {
     position: relative;
+    padding-bottom: 0;
     order: -3;
     width: 50%;
 
@@ -83,6 +86,12 @@
     }
   }
 
+  .form__person {
+    margin-bottom: 48px;
+
+    order: -2;
+  }
+
   .form__impress legend,
   .form__person legend {
     margin-bottom: 60px;
@@ -90,33 +99,29 @@
     text-align: left;
   }
 
-  .form__person {
-    margin-bottom: 55px;
-
-    order: -2;
-  }
-
   .form__contacts {
-    margin-bottom: 40px;
+    margin-bottom: 30px;
+    padding-bottom: 0;
 
     order: -1;
     width: 100%;
   }
 
   .form__contacts legend {
-    margin-bottom: 30px;
+    margin-bottom: 22px;
   }
 
   .form__sights {
-    margin-bottom: 55px;
+    margin-bottom: 35px;
     width: 100%;
   }
 
   .form__sights legend {
-    margin-bottom: 45px;
+    margin-bottom: 40px;
   }
 
   .form__emotions {
+    margin-bottom: 48px;
     width: 100%;
   }
 
@@ -125,13 +130,11 @@
   }
 
   .form__btn {
-    margin-bottom: 60px;
-
+    margin-bottom: 62px;
     width: 50%;
   }
 
   .form__explanation {
-
     display: block;
     margin-left: auto;
   }
@@ -139,7 +142,7 @@
 
 @media (min-width: @desktop) {
   .form__person {
-    margin-bottom: 50px;
+    margin-bottom: 48px;
   }
 
   .form__impress legend {
@@ -152,5 +155,9 @@
 
   .form__sights legend {
     margin-bottom: 40px;
+  }
+
+  .form__btn {
+    margin-bottom: 65px;
   }
 }
