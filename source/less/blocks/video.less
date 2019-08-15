@@ -50,8 +50,13 @@
   background-color: @video-color;
 }
 
+
 .video__icon {
   fill: @video-icon-color;
+
+  @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+    margin-top: 23px;
+  }
 
   &:hover {
     fill: @video-icon-hover;
@@ -123,6 +128,10 @@
 
     &:active {
       fill: @video-icon-tablet-active;
+    }
+
+    @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+      margin-top: 37px;
     }
   }
 
