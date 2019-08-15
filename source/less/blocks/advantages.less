@@ -4,7 +4,7 @@
 
 .advantages__header {
   position: relative;
-  padding: 45px 20px 30px 20px;
+  padding: 38px 20px 20px 20px;
   margin: 0 auto;
 
   width: 100%;
@@ -15,7 +15,14 @@
 }
 
 .advantages__title {
-  margin-bottom: 35px;
+  margin-bottom: 30px;
+
+  font-size: 21px;
+}
+
+
+.advantages__br {
+  display: none;
 }
 
 @media (min-width: @tablet) {
@@ -26,10 +33,10 @@
 
   .advantages__header {
     padding-top: 50px;
-    padding-bottom: 55px;
+    padding-bottom: 52px;
     margin: 0 auto;
 
-    width: 500px;
+    width: 550px;
 
     &::after,
     &::before {
@@ -39,5 +46,9 @@
 
   .advantages__row--reverse .advantage {
     order: 2;
+  }
+
+  .advantages__br {
+    display: inline;
   }
 }
