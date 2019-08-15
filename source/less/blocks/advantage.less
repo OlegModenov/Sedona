@@ -91,7 +91,7 @@
 @media (min-width: @tablet) {
   .advantage {
     width: 33.33%;
-    padding: 37px 45px;
+    padding: 45px;
 
     min-height: 256px;
   }
@@ -130,7 +130,8 @@
   }
 
   @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
-    .advantage__number::before {
+    .advantage__number::before,
+    .advantage--grey .advantage__number::before {
       margin-left: 50px;
     }
   }
@@ -138,7 +139,8 @@
 
 @media (min-width: @desktop) {
   @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
-    .advantage__number::before {
+    .advantage__number::before,
+    .advantage--grey .advantage__number::before {
       margin-left: 125px;
     }
   }
