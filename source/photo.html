@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="css/style.min.css">
     <link rel="preload" href="fonts/ptsans.woff2" as="font">
     <link rel="preload" href="fonts/ptsansbold.woff2" as="font">
+    <script src="js/picturefill.js" async></script>
   </head>
   <body>
 
@@ -17,7 +18,7 @@
     <div class="container">
       <header class="page-header">
 
-        <nav class="main-nav">
+        <nav class="main-nav main-nav--opened">
           <ul class="main-nav__list site-list">
             <li class="site-list__item">
               <a class="site-list__link" href="index.html">Главная</a>
@@ -42,7 +43,7 @@
               <img class="page-header__logo-image" src="img/logo-sedona-mobile.svg" alt="Седона логотип">
             </picture>
           </a>
-          <button class="btn page-header__toggle page-header__toggle--opened" type="button"><span class="visually-hidden">Кнопка переключения</span></button>
+          <button class="btn page-header__toggle page-header__toggle--opened page-header__toggle--nojs" type="button"><span class="visually-hidden">Кнопка переключения</span></button>
         </div>
 
       </header>
@@ -50,7 +51,10 @@
       <main>
 
         <div class="promo promo--small">
-          <img class="promo__image promo__image--small" src="img/text-sedona.svg" width="229" height="39" alt="Седона промо">
+          <svg class="promo__image promo__image--small" width="229" height="39"  viewbox="0 0 460 80" aria-labelledby="promo">
+              <title id="promo">Седона надпись</title>
+              <use xlink:href="#text-sedona"></use>
+            </svg>
         </div>
 
         <section class="gallery">
@@ -74,7 +78,7 @@
                     <source media="(min-width: 768px)" srcset="img/photo-sunset-tablet@1x.jpg 1x, img/photo-sunset-tablet@2x.jpg 2x">
                     <img class="post__image" src="img/photo-sunset-mobile@1x.jpg" srcset="img/photo-sunset-mobile@2x.jpg 2x" alt="Народные просторы">
                   </picture>
-                  <div class="post__wrapper">
+                  <div class="post__wrapper post__wrapper--big">
                     <div class="post__text">
                       <h3 class="post__title">Народные просторы</h3>
                       <p class="post__author">Автор фото: Борис</p>
@@ -241,6 +245,6 @@
 
         </footer>
     </div>
-
+    <script src="js/mobile-menu.js"></script>
   </body>
 </html>

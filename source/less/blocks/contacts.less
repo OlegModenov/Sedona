@@ -2,13 +2,15 @@
   position: relative;
 
   width: 100%;
-  margin-bottom: 15px;
+  margin-bottom: 8px;
 }
 
 .contacts__item label {
   display: block;
-  width: 210px;
   margin-bottom: 10px;
+  margin-left: 20px;
+
+  text-align: left;
 }
 
 .contacts__item input {
@@ -17,9 +19,9 @@
 
 .contacts__phone,
 .contacts__mail {
-  position: relative;
-  margin-top: -58px;
-  margin-left: auto;
+  position: absolute;
+  right: 0;
+  top: 36px;
 
   display: flex;
   justify-content: center;
@@ -28,6 +30,12 @@
   height: 58px;
 
   background-color: @grey;
+}
+
+@media (min-width: @tablet) {
+  .contacts__item {
+    margin-bottom: 20px;
+  }
 }
 
 @media (min-width: @desktop) {
@@ -60,9 +68,13 @@
     width: 314px;
   }
 
+  .contacts__item:nth-child(2) input {
+    margin-left: auto;
+  }
+
   .contacts__item label {
     margin: 0;
-    margin-right: 10px;
+    margin-right: 8px;
   }
 
   .contacts__item:first-child label {
@@ -70,12 +82,11 @@
   }
 
   .contacts__phone {
-    margin-top: 0;
-    margin-left: -58px;
+    top: 0;
+    right: 78px;
   }
 
   .contacts__mail {
-    margin-top: 0;
-    margin-left: -50px;
+    top: 0;
   }
 }

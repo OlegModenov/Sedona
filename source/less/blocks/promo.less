@@ -1,5 +1,7 @@
 .promo {
   display: flex; //для центровки картинки-надписи
+  justify-content: center;
+  align-items: center;
   position: relative;
   z-index: -1;
 
@@ -21,7 +23,7 @@
     content: "";
     position: absolute;
     left: 0;
-    bottom: -1px;
+    bottom: 0;
 
     width: 320px;
     height: 27px;
@@ -37,9 +39,9 @@
   background-position: bottom;
 }
 
-.promo__image {
-  margin: auto auto;
-}
+// .promo__image {
+//   margin-bottom: 20px;
+// }
 
 .promo__image--small {
   width: 230px;
@@ -88,12 +90,13 @@
   }
 
   .promo__image {
-    width: 460px;
+    width: 458px;
     height: 350px;
+    margin-bottom: 20px;
   }
 
   .promo__image--small {
-    height: 75px;
+    height: 78px;
   }
 }
 

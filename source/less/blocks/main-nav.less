@@ -15,6 +15,16 @@
   list-style: none;
 }
 
+@media (max-width: @tablet - 1px) {
+  .main-nav--closed {
+    display: none;
+  }
+
+  .main-nav--opened {
+    display: block;
+  }
+}
+
 @media (min-width: @tablet) {
   .main-nav {
     width: 768px;

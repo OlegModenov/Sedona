@@ -23,7 +23,7 @@
   }
 }
 
-.page-header__toggle--closed {
+.page-header__toggle--opened {
   top: -210px;
   right: 20px;
   z-index: 1;
@@ -53,14 +53,18 @@
   }
 }
 
-.page-header__toggle--opened {
-  top: 18px;
+.page-header__toggle--closed {
+  top: 15px;
   right: 20px;
 
   background-color: @white;
   background-image: url("../img/icon-menu.svg");
   background-position: center center;
   background-repeat: no-repeat;
+}
+
+.page-header__toggle--nojs {
+  display: none;
 }
 
 @media (min-width: @tablet) {

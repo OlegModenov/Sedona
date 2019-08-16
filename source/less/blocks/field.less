@@ -6,8 +6,7 @@
   margin: 0;
 
   //серые полоски
-  //не работает last-child
-  &:not(:nth-child(5))::after {
+  &:not(:last-of-type)::after {
     content: "";
 
     position: absolute;
@@ -22,7 +21,10 @@
 }
 
 .field__legend {
+  width: 100%;
   margin-bottom: 25px;
+
+  text-align: center;
 }
 
 .field__list {
@@ -47,8 +49,10 @@
 
 .field__text {
   width: 280px;
-  min-height: 59px;
-  padding: 16px 22px;
+  min-height: 58px;
+  padding-top: 14px;
+  padding-bottom: 18px;
+  padding-left: 22px;
   padding-right: 70px;
 
   font-family: @deafult-font;
@@ -63,13 +67,16 @@
 
   &:focus {
     background-color: @white;
-    outline: none;
   }
 
   &::placeholder {
     font-weight: 700;
     color: @black;
   }
+}
+
+.field__text--error {
+  outline: 1px solid red;
 }
 
 .field__label {
@@ -85,18 +92,23 @@
 
 .field__area {
   padding-left: 20px;
-  padding-top: 20px;
+  padding-top: 16px;
 
   width: 100%;
+  min-height: 160px;
 
+  background-color: @grey-light;
+  border: none;
   resize: none;
 
   &::placeholder {
     font-weight: 700;
+    line-height: 26px;
     color: @black;
   }
 }
 
+// рамка-фон для радиокнопки
 .field__indicator {
   position: absolute;
   top: 0;
@@ -111,14 +123,22 @@
   background-color: @radio-color;
   border-radius: 50%;
 
-  &:hover,
-  &:focus {
+  &:hover {
     background-color: @radio-hover;
   }
 
   &:active {
     background-color: @radio-active;
   }
+}
+
+// состояние фокуса для кнопок для доступности
+.field__radio:focus + .field__indicator,
+.field__checkbox:focus + .field__indicator {
+  outline-color: @outline-color;
+  outline-offset: -2px;
+  outline-style: auto;
+  outline-width: 5px;
 }
 
 // отметка в радиокнопке
@@ -136,7 +156,7 @@
   background-color: @radio-active;
 }
 
-// фон для чекбокса
+// рамка-фон для чекбокса
 .field__indicator--checkbox {
   border-radius: 20%;
 }
@@ -148,6 +168,7 @@
   position: absolute;
   top: 16px;
   left: 16px;
+  margin-top: 3px;
 
   width: 25px;
   height: 20px;
@@ -158,6 +179,7 @@
   background-repeat: no-repeat;
 }
 
+// замена иконки (цвета) в случае нажатия на нее
 .field__checkbox:checked + .field__indicator:active::before {
   background-image: url("../img/icon-tick-grey.svg");
 }
@@ -172,21 +194,36 @@
   }
 
   .field__legend--with-stripe {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-
-    width: 100%;
+    position: relative;
+    // display: flex;
+    // align-items: center;
+    // justify-content: space-between;
 
     &::before,
     &::after {
       content: "";
+      position: absolute;
+      top: 50%;
 
       width: 125px;
       height: 1px;
 
       background-color: @grey-darker;
     }
+
+    &::before {
+      left: 0;
+    }
+
+    &::after {
+      right: 0;
+    }
+  }
+
+  .field__legend--with-stripe span {
+    display: block;
+    margin: 0 auto;
+    width: 300px;
   }
 }
 

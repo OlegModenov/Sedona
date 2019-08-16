@@ -8,10 +8,10 @@
 .review__header {
   position: relative;
 
-  padding-top: 40px;
-  padding-bottom: 20px;
+  padding-top: 35px;
   margin: 0 auto;
-  margin-bottom: 15px;
+  margin-bottom: 18px;
+  padding-bottom: 20px;
 
   &::after {
     content: "";
@@ -28,7 +28,11 @@
 }
 
 .review__title {
-  margin-bottom: 35px;
+  margin-bottom: 25px;
+}
+
+.review__desc {
+  line-height: 24px;
 }
 
 @media (min-width: @tablet) {
@@ -37,8 +41,9 @@
   }
 
   .review__header {
-    padding-top: 70px;
-    margin-bottom: 50px;
+    padding-top: 75px;
+    padding-bottom: 0;
+    margin-bottom: 75px;
     width: 440px;
 
     &::after {
@@ -47,6 +52,7 @@
   }
 
   .review__title {
+    margin-bottom: 30px;
     font-size: 30px;
   }
 }
@@ -57,7 +63,7 @@
   }
 
   .review__header {
-    padding-top: 110px;
-    margin-bottom: 45px;
+    padding-top: 112px;
+    margin-bottom: 58px;
   }
 }

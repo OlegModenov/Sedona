@@ -1,3 +1,40 @@
+.map {
+  position: relative;
+}
+
 .map__image {
+  position: relative;
+  z-index: 1;
   display: block;
+}
+
+.map__marker {
+  position: absolute;
+  z-index: 2;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.map__interactive {
+  position: relative;
+  z-index: 3;
+  display: block;
+  margin-top: -350px;
+}
+
+.map__interactive--nojs {
+  display: none;
+}
+
+@media (min-width: @tablet) {
+  .map__interactive {
+    width: 768px;
+  }
+}
+
+@media (min-width: @desktop) {
+  .map__interactive {
+    width: 1200px;
+  }
 }

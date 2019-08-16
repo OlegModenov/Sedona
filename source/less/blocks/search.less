@@ -29,16 +29,18 @@
   .search {
     margin: 0 auto;
     padding-top: 55px;
+    padding-bottom: 60px;
   }
 
   .search__title {
+    margin-bottom: 30px;
     font-size: 30px;
   }
 
   .search__desc {
     width: 460px;
     margin: 0 auto;
-    margin-bottom: 35px;
+    margin-bottom: 42px;
   }
 
   .search__btn {
@@ -46,8 +48,12 @@
   }
 }
 
-@media (max-width: @tablet - 1px) {
-  .search__br {
-    display: none;
+@media (min-width: @desktop) {
+  .search {
+    padding-bottom: 65px;
+  }
+
+  .search__desc {
+    margin-bottom: 50px;
   }
 }
