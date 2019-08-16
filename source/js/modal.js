@@ -11,12 +11,12 @@ var phone = form.querySelector("[type=tel]").value;
 var mail = form.querySelector("[name=mail]").value;
 
 // Открытие модальных окон по кнопке
-open_popup.addEventListener("click", function (evt) {
-    evt.preventDefault();
-    overlay.classList.add("modal__show")
-    popup_fail.classList.add("modal__show");
-    popup_success.classList.add("modal__show");
-  });
+// open_popup.addEventListener("click", function (evt) {
+//     evt.preventDefault();
+//     overlay.classList.add("modal__show")
+//     popup_fail.classList.add("modal__show");
+//     popup_success.classList.add("modal__show");
+//   });
 
 // Закрытие модальных окон по кнопке
 close_fail.addEventListener("click", function (evt) {
