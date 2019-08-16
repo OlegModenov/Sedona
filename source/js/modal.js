@@ -5,18 +5,10 @@ var popup_success = document.querySelector(".success");
 var close_success = popup_success.querySelector(".success__btn");
 var overlay = document.querySelector(".modal__overlay");
 var form = document.querySelector(".form");
-var name = form.querySelector(".person__name").value;
-var surname = form.querySelector(".person__surname").value;
-var phone = form.querySelector("[type=tel]").value;
-var mail = form.querySelector("[name=mail]").value;
-
-// Открытие модальных окон по кнопке
-// open_popup.addEventListener("click", function (evt) {
-//     evt.preventDefault();
-//     overlay.classList.add("modal__show")
-//     popup_fail.classList.add("modal__show");
-//     popup_success.classList.add("modal__show");
-//   });
+var person_name = form.querySelector(".person__name");
+var surname = form.querySelector(".person__surname");
+var phone = form.querySelector("[type=tel]");
+var mail = form.querySelector("[name=mail]");
 
 // Закрытие модальных окон по кнопке
 close_fail.addEventListener("click", function (evt) {
@@ -41,17 +33,19 @@ window.addEventListener("keydown", function (evt) {
   }
 });
 
+//Открытие модальных окон при отправке формы
 form.addEventListener("submit", function (evt) {
-  // overlay.classList.add("modal__show")
-  console.log(name);
-  if (!name) {
+  overlay.classList.add("modal__show")
+  if (!person_name.value || !surname.value) {
     evt.preventDefault();
-    console.log("Error");
-    // popup_fail.classList.add("modal__show");
+    popup_fail.classList.add("modal__show");
+    person_name.classList.add("field__text--error");
+    surname.classList.add("field__text--error");
   }
   else {
     evt.preventDefault();
-    console.log("Success");
-    // popup_success.classList.add("modal__show");
+    popup_success.classList.add("modal__show");
+    person_name.classList.remove("field__text--error");
+    surname.classList.remove("field__text--error");
   }
 });

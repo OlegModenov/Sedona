@@ -67,13 +67,16 @@
 
   &:focus {
     background-color: @white;
-    outline: none;
   }
 
   &::placeholder {
     font-weight: 700;
     color: @black;
   }
+}
+
+.field__text--error {
+  outline: 1px solid red;
 }
 
 .field__label {
@@ -105,6 +108,7 @@
   }
 }
 
+// рамка-фон для радиокнопки
 .field__indicator {
   position: absolute;
   top: 0;
@@ -119,14 +123,22 @@
   background-color: @radio-color;
   border-radius: 50%;
 
-  &:hover,
-  &:focus {
+  &:hover {
     background-color: @radio-hover;
   }
 
   &:active {
     background-color: @radio-active;
   }
+}
+
+// состояние фокуса для кнопок для доступности
+.field__radio:focus + .field__indicator,
+.field__checkbox:focus + .field__indicator {
+  outline-color: @outline-color;
+  outline-offset: -2px;
+  outline-style: auto;
+  outline-width: 5px;
 }
 
 // отметка в радиокнопке
@@ -144,7 +156,7 @@
   background-color: @radio-active;
 }
 
-// фон для чекбокса
+// рамка-фон для чекбокса
 .field__indicator--checkbox {
   border-radius: 20%;
 }
@@ -167,6 +179,7 @@
   background-repeat: no-repeat;
 }
 
+// замена иконки (цвета) в случае нажатия на нее
 .field__checkbox:checked + .field__indicator:active::before {
   background-image: url("../img/icon-tick-grey.svg");
 }
