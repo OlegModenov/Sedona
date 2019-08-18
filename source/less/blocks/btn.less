@@ -10,7 +10,10 @@
   border: none;
   background-color: @btn-color;
 
-  &:hover,
+  &:hover {
+    background-color: @btn-hover;
+  }
+
   &:focus {
     background-color: @btn-hover;
   }
@@ -18,6 +21,7 @@
   &:active {
     background-color: @btn-active;
     color: @btn-active-text;
+    outline: 0;
   }
 
   &:disabled,

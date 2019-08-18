@@ -47,6 +47,17 @@
   margin-bottom: 15px;
 }
 
+.field__label {
+  text-transform: none;
+}
+
+.field__label--regular {
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 14px;
+  color: @black-light;
+}
+
 .field__text {
   width: 280px;
   min-height: 58px;
@@ -59,35 +70,10 @@
 
   background-color: @input-color;
   border: 2px solid @input-color;
-
-  &:hover {
-    background-color: @input-hover;
-    border: 2px solid @input-hover;
-  }
-
-  &:focus {
-    background-color: @white;
-  }
-
-  &::placeholder {
-    font-weight: 700;
-    color: @black;
-  }
 }
 
 .field__text--error {
   outline: 1px solid @red;
-}
-
-.field__label {
-  text-transform: none;
-}
-
-.field__label--regular {
-  text-transform: uppercase;
-  font-weight: 400;
-  font-size: 14px;
-  color: @black-light;
 }
 
 .field__area {
@@ -100,11 +86,24 @@
   background-color: @grey-light;
   border: none;
   resize: none;
+}
+
+.field__area,
+.field__text {
+  &:hover {
+    background-color: @input-hover;
+    border: 2px solid @input-hover;
+    outline: 0;
+  }
+
+  &:focus {
+    background-color: @white;
+  }
 
   &::placeholder {
     font-weight: 700;
-    line-height: 26px;
     color: @black;
+    opacity: 1; //для отображения в mozilla
   }
 }
 
@@ -139,6 +138,11 @@
   outline-offset: -2px;
   outline-style: auto;
   outline-width: 5px;
+}
+
+.field__radio:hover + .field__indicator,
+.field__checkbox:hover + .field__indicator {
+  outline: 0;
 }
 
 // отметка в радиокнопке
