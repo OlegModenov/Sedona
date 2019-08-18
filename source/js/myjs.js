@@ -1,3 +1,21 @@
+// Mobile-menu
+var toggle = document.querySelector(".page-header__toggle");
+var navigation = document.querySelector(".main-nav");
+
+toggle.classList.remove('page-header__toggle--nojs');
+
+toggle.addEventListener("click", function (evt) {
+  evt.preventDefault();
+  navigation.classList.toggle("main-nav--opened");
+  toggle.classList.toggle("page-header__toggle--opened");
+  navigation.classList.toggle("main-nav--closed");
+  toggle.classList.toggle("page-header__toggle--closed");
+});
+
+// Map
+var map = document.querySelector(".map__interactive");
+map.classList.remove("map__interactive--nojs");
+
 // Modal
 var open_popup = document.querySelector(".form__btn");
 var popup_fail = document.querySelector(".fail");
