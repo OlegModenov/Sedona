@@ -20,6 +20,3 @@ trim_trailing_whitespace = true
 
 [*.md]
 trim_trailing_whitespace = false
-
-[files.exclude]
-"source/js/**/*.js"

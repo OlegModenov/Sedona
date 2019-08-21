@@ -1,10 +1,12 @@
 .br-tablet,
-.br-desktop {
+.br-desktop,
+.br-tablet-only {
   display: none;
 }
 
 @media (min-width: @tablet) {
-  .br-tablet {
+  .br-tablet,
+  .br-tablet-only {
     display: inline-block;
   }
 }
@@ -12,5 +14,9 @@
 @media (min-width: @desktop) {
   .br-desktop {
     display: inline-block;
+  }
+
+  .br-tablet-only {
+    display: none;
   }
 }

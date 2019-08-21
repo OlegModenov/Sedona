@@ -1,18 +1,26 @@
 .social__list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
 
-
+  margin: 0;
   padding: 0;
-  width: 155px;
+  width: 151px;
 
   list-style: none;
 }
 
+.social__item {
+  margin-left: 6px;
+  margin-bottom: 5px;
+
+  &:nth-child(3n+1) {
+    margin-left: 0;
+  }
+}
+
 .social__link {
   display: flex;
-  width: 48px;
+  width: 46px;
   height: 48px;
   justify-content: center;
   align-items: center;

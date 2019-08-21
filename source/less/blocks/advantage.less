@@ -101,6 +101,11 @@
     flex-direction: column;
   }
 
+  .advantage--grey:nth-child(2) {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+
   .advantage__image-wrapper {
     flex-grow: 1;
     display: flex;
@@ -144,9 +149,20 @@
 
 @media (min-width: @desktop) {
   .advantage {
-    padding-top: 50px;
-    padding-left: 50px;
-    padding-right: 50px;
+    padding: 55px;
+  }
+
+  .advantage--grey {
+    padding-top: 45px;
+  }
+
+  .advantage--grey:nth-child(2) {
+    padding-left: 65px;
+    padding-right: 65px;
+  }
+
+  .advantage__number {
+    margin-bottom: 22px;
   }
 
   @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
