@@ -224,21 +224,30 @@
           </picture>
           <div class="video__scale"></div>
           <div class="video__icons">
-            <svg class="video__icon video__icon--replay" width="16" height="20" viewbox="0 0 16 20" role="img"
-              aria-labelledby="replay" focusable="false">
-              <title id="replay">Повтор видео</title>
-              <use xlink:href="#icon-video-replay"></use>
-            </svg>
-            <svg class="video__icon video__icon--subscribes" width="32" height="20" viewbox="0 0 32 20" role="img"
-              aria-labelledby="subscribes" focusable="false">
-              <title id="subscribes">Субтитры</title>
-              <use xlink:href="#icon-video-subtitles"></use>
-            </svg>
-            <svg class="video__icon video__icon--fullscreen" width="20" height="20" viewbox="0 0 20 20" role="img"
-              aria-labelledby="fullscreen" focusable="false">
-              <title id="fullscreen">Полный экран</title>
-              <use xlink:href="#icon-video-fullscreen"></use>
-            </svg>
+            <button class="video__btn" type="button">
+              <span class="visually-hidden">Воспроизвести</span>
+              <svg class="video__icon" width="16" height="20" viewbox="0 0 16 20" role="img"
+                aria-labelledby="replay" focusable="false">
+                <title id="replay">Воспроизвести</title>
+                <use xlink:href="#icon-video-replay"></use>
+              </svg>
+            </button>
+            <button class="video__btn video__btn--subscribes" type="button">
+              <span class="visually-hidden">Субтитры</span>
+              <svg class="video__icon" width="32" height="20" viewbox="0 0 32 20" role="img"
+                aria-labelledby="subscribes" focusable="false">
+                <title id="subscribes">Субтитры</title>
+                <use xlink:href="#icon-video-subtitles"></use>
+              </svg>
+            </button>
+            <button class="video__btn" type="button">
+              <span class="visually-hidden">Полный экран</span>
+              <svg class="video__icon" width="20" height="20" viewbox="0 0 20 20" role="img"
+                aria-labelledby="fullscreen" focusable="false">
+                <title id="fullscreen">Полный экран</title>
+                <use xlink:href="#icon-video-fullscreen"></use>
+              </svg>
+            </button>
           </div>
         </div>
       </section>
