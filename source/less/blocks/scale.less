@@ -1,0 +1,30 @@
+.scale__stripe {
+  width: 235px;
+  height: 3px;
+  background-color: @white-transparent20;
+  display: flex;
+  align-items: center;
+}
+
+.scale__btn {
+  margin-left: 24.68%;
+  padding: 0;
+  height: 9px;
+  width: 9px;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  background-color: @white;
+
+  &:hover {
+    outline: none;
+  }
+}
+
+@media (min-width: @tablet) {
+  .scale__stripe {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+  }
+}
