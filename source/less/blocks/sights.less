@@ -24,7 +24,7 @@
 
 @media (min-width: @desktop) {
   .sights {
-    justify-content: space-between;
+    // justify-content: space-between;
     padding-left: 0;
     padding-right: 0;
 
@@ -33,13 +33,13 @@
 
   .sights__item {
     width: 260px;
-  }
 
-  .sights__item:nth-child(3) {
-    width: 230px;
-  }
+    &:nth-child(3) {
+      width: 230px;
+    }
 
-  .sights__item:last-child {
-    width: 210px;
+    &:nth-child(4) {
+      width: 210px;
+    }
   }
 }
