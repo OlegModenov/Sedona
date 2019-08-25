@@ -27,6 +27,11 @@
   display: none;
 }
 
+
+.advantages__image {
+  display: block;
+}
+
 @media (min-width: @tablet) {
   .advantages__row {
     display: flex;
@@ -53,6 +58,18 @@
   .advantages__title {
     width: 100%;
     font-size: 21px;
+  }
+
+  .advantages__image-wrapper {
+    display: flex;
+    flex-grow: 1;
+    width: 66.66%;
+  }
+
+  .advantages__image {
+    display: block;
+    height: 100%;
+    object-fit: cover;
   }
 }
 
