@@ -58,12 +58,12 @@
 }
 
 .field__text {
-  padding-top: 14px;
-  padding-bottom: 18px;
-  padding-left: 22px;
+  border: 4px solid @input-color;
+  padding-top: 10px;
+  padding-bottom: 14px;
+  padding-left: 18px;
   padding-right: 70px;
 
-  border: 2px solid @input-color;
   width: 280px;
   min-height: 58px;
 
@@ -76,9 +76,9 @@
 }
 
 .field__area {
-  border: none;
-  padding-left: 20px;
-  padding-top: 16px;
+  border: 4px solid @input-color;
+  padding-left: 16px;
+  padding-top: 12px;
 
   width: 100%;
   min-height: 160px;
@@ -91,7 +91,7 @@
 .field__text {
   &:hover {
     background-color: @input-hover;
-    border: 2px solid @input-hover;
+    border-color: @input-hover;
     outline: 0;
   }
 

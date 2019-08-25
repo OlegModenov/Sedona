@@ -2,7 +2,8 @@
 var toggle = document.querySelector(".page-header__toggle");
 var navigation = document.querySelector(".main-nav");
 
-toggle.classList.remove('page-header__toggle--nojs');
+toggle.classList.remove("page-header__toggle--nojs");
+navigation.classList.remove("main-nav--nojs");
 
 toggle.addEventListener("click", function (evt) {
   evt.preventDefault();

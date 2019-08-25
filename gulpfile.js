@@ -16,7 +16,7 @@ var posthtml = require("gulp-posthtml");
 var include = require("posthtml-include");
 var del = require("del");
 var htmlmin = require("gulp-htmlmin");
-var uglify = require('gulp-uglify');
+var uglify = require("gulp-uglify");
 
 //Вставка спрайта в html и сжатие
 gulp.task("html", function() {
